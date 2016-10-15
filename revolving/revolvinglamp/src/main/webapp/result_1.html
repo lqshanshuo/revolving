@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The prototype website of web framework">
+    <meta name="author" content="LY">
+    <title>Matrix</title>
+    <link rel="shortcut icon" href="assets/self-owned/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/self-owned/ico/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/reference/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/reference/flat-ui/css/flat-ui.css">
+    <link rel="stylesheet" type="text/css" href="assets/reference/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/self-owned/css/matrix.css">
+  </head>
+
+  <body>
+    <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/average_background.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:688px">
+      <!--<div class="flat-matrix" >-->      
+      <div class="app-container">
+        <div class="row content-container">
+          <!-- 应用左侧NAV导航，可以应用与assist，帮助，过滤等辅助组件，默认自动收缩扩展，支持悬停（点击右上角按钮切换）-->
+          <div class="container">
+            <!--<p data-bind="text: list.length"></p>-->
+            <div class="row">
+              <div class="col-md-6">
+                <video width="320" height="240" controls>
+                  <source src="movie.wmv" type="video/wmv">
+                </video>
+              </div>
+              <div class="col-md-6 text-center">
+                <br>
+                <br>
+                <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div>                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- behavior=scroll, slide, alternate -->
+                <!-- direction=left,right,up,down -->
+                <!-- scrollamount=20 -->
+                <base href="<a href="http://blog.netfetch.cn" target="_blank">http://blog.netfetch.cn</a>">
+                <div align="center" id="demo" style="overflow:hidden;height:200px;width:95px;border-width:1px 1px 1px 1px;border-style:dotted dotted dotted dotted;">
+                  <div id="demo1">
+                    <!-- 定义内容-->
+                    <div>aaaaaaaaaaaaaaaaaa</div>
+                    <div>aaaaaaaaaaaaaaaaaa</div>
+                    <div>aaaaaaaaaaaaaaaaaa</div>
+                  </div>
+                  <div id="demo2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/reference/jquery/jquery-1.11.1.min.js"></script>
+    <script src="assets/reference/jquery/jquery.json.js"></script>
+    <script src="assets/reference/knockout.js/knockout-3.3.0.js"></script>
+    <script src="assets/reference/jquery-tiny-pubsub/tiny-pubsub.js"></script>
+    <script src="assets/self-owned/js/generic/generic_util.js"></script>
+
+    <script language="javascript" type="text/javascript">
+                  $(document).ready(function () {
+                    getWishes();
+
+                    setInterval(function () {
+                      getWishes();
+                    }, 3000)
+                  });
+
+                  /**** view model start ****/
+                  function GoalViewModel(department, name, wish) {
+                    var self = this;
+                    self.stringalpha = ko.observable(department);
+                    self.name = ko.observable(name);
+                    self.numberalpha = ko.observable(wish);
+                  }
+
+                  function GoalListViewModel() {
+                    var self = this;
+
+                    self.original_list = ko.observableArray();
+                    self.revolving_list = ko.observableArray();
+
+                    self.wishList = ko.observableArray();
+//        self.addWish = function (wish, origin) {
+//
+//        }
+                  }
+                  /**** view model end ****/
+
+                  var goalListViewModel = new GoalListViewModel();
+                  ko.applyBindings(goalListViewModel, document.getElementById('wishListDIV'));
+
+                  /**** server request && response handle start ****/
+                  var getWishes = function () {
+
+                    $.ajax({
+                      url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
+                      type: 'POST',
+                      success: function (json) {
+                        goalListViewModel.original_list(json.result);
+
+                        var results = json.result;
+                        for (var i = 0; i < results.length; i++) {
+                          var need_add = true;
+
+                          var server = results[i];
+                          for (var j = 0; j < goalListViewModel.revolving_list().length; j++) {
+                            var revolve = goalListViewModel.revolving_list()[j];
+                            if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
+                              //goal has been updated, remove original and update
+                              console.log("update")
+                              goalListViewModel.revolving_list().splice(j, 1);
+                              need_add = true;
+                            }
+                            if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
+                              console.log("the same")
+                              need_add = false;
+                            }
+                          }
+                          console.log(server)
+                          console.log(revolve)
+                          console.log(need_add)
+
+                          if (need_add) {
+//                var joinstr = results[i].stringalpha + " 部门 " + results[i].name + " " + results[i].numberalpha + " 万";
+
+                            var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
+                            goalListViewModel.revolving_list.push(goalViewModel);
+                          }
+                        }
+                      },
+                      error: function (json) {
+                        console.log("error");
+                      }
+                    })
+                  }
+
+                  var is_scroll = true;
+                  var changeScrollStatus = function () {
+                    is_scroll = !is_scroll;
+                    if (is_scroll) {
+                      document.getElementById('mymarquee').start();
+                    } else {
+                      document.getElementById('mymarquee').stop();
+                    }
+                  }
+                  $("#target").dblclick(function () {
+                    this.stop();
+                  });
+
+    </script>
+
+    <!-- 指向链接图片的URL -->
+
+
+    <script language="javascript" type="text/javascript">
+      <!--
+    var demo = document.getElementById("demo");
+      var demo1 = document.getElementById("demo1");
+      var demo2 = document.getElementById("demo2");
+      var speed = 10;    //滚动速度值，值越大速度越慢
+      demo2.innerHTML = demo1.innerHTML    //克隆demo2为demo1
+      function Marquee() {
+        if (demo2.offsetTop - demo.scrollTop <= 0)    //当滚动至demo1与demo2交界时
+          demo.scrollTop -= demo1.offsetHeight    //demo跳到最顶端
+        else {
+          demo.scrollTop++
+        }
+      }
+      var MyMar = setInterval(Marquee, speed);        //设置定时器
+      demo.onmouseover = function () {
+        clearInterval(MyMar)
+      }    //鼠标经过时清除定时器达到滚动停止的目的
+      demo.onmouseout = function () {
+        MyMar = setInterval(Marquee, speed)
+      }    //鼠标移开时重设定时器
+-->
+    </script>
+  </body>
+
+</html>

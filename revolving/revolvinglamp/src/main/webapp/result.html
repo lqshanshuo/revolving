@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The prototype website of web framework">
+    <meta name="author" content="LY">
+    <title>Matrix</title>
+    <link rel="shortcut icon" href="assets/self-owned/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/self-owned/ico/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/reference/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/reference/flat-ui/css/flat-ui.css">
+    <link rel="stylesheet" type="text/css" href="assets/reference/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/self-owned/css/matrix.css">
+  </head>
+
+  <body>
+    <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/revolve_background.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%">
+      <!--<div class="flat-matrix" >-->      
+      <div class="app-container" >
+        <div class="row content-container" style="margin-right:0px">
+          <!-- 应用左侧NAV导航，可以应用与assist，帮助，过滤等辅助组件，默认自动收缩扩展，支持悬停（点击右上角按钮切换）-->
+          <div class="container">
+            <!--<p data-bind="text: list.length"></p>-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-5">
+<!--                  <video autoplay loop controls>
+                    <source src="assets/self-owned/img/zgpa/tree.mp4" type="video/mp4">
+                  </video>-->
+                </div>
+                <div class="col-md-5 text-center" style="padding-top:20%">
+<!--                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>-->
+                  <!-- behavior=scroll, slide, alternate -->
+                  <!-- direction=left,right,up,down -->
+                  <!-- scrollamount=20 -->
+                  <div>
+                    <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=4  data-bind="foreach: revolving_list">
+                      <div >
+                        <form class="form-horizontal" >
+                          <div class="form-group" style="margin-bottom: 0;">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4" style="padding-left: 0px;">
+                              <p data-bind="text: stringalpha" class="form-control-static" style="font-size: 18px;text-align: left;color:white;opacity: 0.5"></p>
+                            </div>
+                            <div class="col-md-2" style="padding-left: 0px;">
+                              <p class="form-control-static" style="font-size: 18px;text-align: left;color:white;opacity: 0.5">部门</p>
+                            </div>
+                            <div class="col-md-2" style="padding-left: 0px;">
+                              <p data-bind="text: name" class="form-control-static" style="font-size: 18px;text-align: left;color:white;opacity: 0.5"></p>
+                            </div>
+                            <div class="col-md-3" style="padding-left: 0px;">
+                              <p data-bind="text: function(){return numberalpha()+'万'}(), 
+style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>100 ? '25px':'18px'}" 
+                                 class="form-control-static" style="text-align: left;opacity: 0.5"></p>
+                            </div>
+                            <!--                      <div class="col-sm-8">
+                                                    results[i].stringalpha + " 部门 " + results[i].name + " " + results[i].numberalpha + " 万"
+                                                    <p data-bind="text: $data.joinstr" class="form-control-static" style="font-weight: bold;font-size: 18px;letter-spacing: 2px; color:white;opacity: 0.5">ID-1234567890</p>
+                                                  </div>-->
+                          </div>
+                        </form>
+                      </div>
+                    </marquee>
+                    <br>
+                  </div>
+                </div>
+                <div class="col-md-2 text-right pull-right" style="padding-top:20%">
+                  <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div>                
+                  <div data-bind="foreach: greater100_list">
+                    <div class="row">
+                      <div class="col-md-offset-2 col-md-4" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
+                      <div class="col-md-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
+                      <div class="col-md-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px; opacity: 0.5;"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/reference/jquery/jquery-1.11.1.min.js"></script>
+    <script src="assets/reference/jquery/jquery.json.js"></script>
+    <script src="assets/reference/knockout.js/knockout-3.3.0.js"></script>
+    <script src="assets/reference/jquery-tiny-pubsub/tiny-pubsub.js"></script>
+    <script src="assets/self-owned/js/generic/generic_util.js"></script>
+
+    <script language="javascript" type="text/javascript">
+                    $(document).ready(function () {
+                      getWishes();
+
+                      setInterval(function () {
+                        getWishes();
+                      }, 1000)
+
+                      var fetch_index = 0;
+                      setInterval(function () {
+                        //第一次先将前10个push进去，之后再一个一个push到列表中
+                        if (fetch_index === 0) {
+                          for (; fetch_index < 10 || fetch_index < goalListViewModel.revolved_list().length; fetch_index++) {
+                            var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
+                            goalListViewModel.revolving_list.push(goalViewModel);
+
+                            if (goalViewModel.numberalpha() >= 100) {
+                              goalListViewModel.greater100_list.push(goalViewModel);
+                            }
+                          }
+
+                          return
+                        }
+
+                        //保证走马灯中只有10个在显示
+                        if (goalListViewModel.revolved_list().length > 10) {
+                          console.log(2222)
+                          goalListViewModel.revolved_list().splice(0, 1);
+                        }
+
+                        if (fetch_index < goalListViewModel.revolved_list().length) {
+                          var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
+                          goalListViewModel.revolving_list.push(goalViewModel);
+                          fetch_index++;
+
+                          if (goalViewModel.numberalpha() >= 100) {
+                            goalListViewModel.greater100_list.push(goalViewModel);
+                          }
+                        }
+                      }, 1000)
+                    });
+
+                    /**** view model start ****/
+                    function GoalViewModel(department, name, wish) {
+                      var self = this;
+                      self.stringalpha = ko.observable(department);
+                      self.name = ko.observable(name);
+                      self.numberalpha = ko.observable(wish);
+                    }
+
+                    function GoalListViewModel() {
+                      var self = this;
+
+                      self.original_list = ko.observableArray();
+                      self.revolved_list = ko.observableArray();
+                      self.revolving_list = ko.observableArray();
+                      self.greater100_list = ko.observableArray();
+
+                      self.wishList = ko.observableArray();
+//        self.addWish = function (wish, origin) {
+//
+//        }
+                    }
+                    /**** view model end ****/
+
+                    var goalListViewModel = new GoalListViewModel();
+                    ko.applyBindings(goalListViewModel, document.getElementById('wishListDIV'));
+
+                    /**** server request && response handle start ****/
+                    var getWishes = function () {
+
+                      $.ajax({
+                        url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
+                        type: 'POST',
+                        success: function (json) {
+                          goalListViewModel.original_list(json.result);
+                          var results = json.result;
+
+                          for (var i = 0; i < results.length; i++) {
+                            var need_add = true;
+                            var server = results[i];
+
+                            for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
+                              var revolve = goalListViewModel.revolved_list()[j];
+                              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
+                                need_add = true;
+                              }
+                              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
+                                need_add = false;
+                              }
+                            }
+
+                            if (need_add) {
+
+                              var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
+                              goalListViewModel.revolved_list.push(goalViewModel);
+                            }
+                          }
+                        },
+                        error: function (json) {
+                          console.log("error");
+                        }
+                      })
+                    }
+
+                    var is_scroll = true;
+                    var changeScrollStatus = function () {
+                      is_scroll = !is_scroll;
+                      if (is_scroll) {
+                        document.getElementById('mymarquee').start();
+                      } else {
+                        document.getElementById('mymarquee').stop();
+                      }
+                    }
+                    $("#target").dblclick(function () {
+                      this.stop();
+                    });
+
+    </script>
+  </body>
+
+</html>
