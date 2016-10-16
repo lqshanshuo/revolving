@@ -116,7 +116,7 @@ public class CUDService {
                 for (String key : keys) {
                     if (methodName.equalsIgnoreCase("set" + key)) {
                         Object val = attMap.get(key);
-                        if (val instanceof Integer) {
+                        if (val instanceof Integer || val instanceof BigInteger || val instanceof Long) {
                             try {
                                 Long long_val = Long.parseLong(val.toString());
                                 m.invoke(object, long_val);
@@ -125,7 +125,7 @@ public class CUDService {
                                 m.invoke(object, _val);
                             }
 
-                        } else {
+                        }else {
                             m.invoke(object, val);
                         }
 
