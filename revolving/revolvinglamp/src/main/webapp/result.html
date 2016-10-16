@@ -74,7 +74,7 @@ style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>100
                   <div class="col-sm-6 text-right pull-right" style="padding-top:20%">
                     <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div>                
                     <div data-bind="foreach: greater100_list">
-                      <div class="row">
+                      <div class="row" data-bind="if:$data">
                         <div class="col-md-offset-2 col-md-4" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
                         <div class="col-md-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
                         <div class="col-md-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px; opacity: 0.5;"></div>

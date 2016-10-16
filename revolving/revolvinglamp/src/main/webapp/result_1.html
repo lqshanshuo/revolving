@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-sm-3" style="padding-left: 0px;">
                           <p data-bind="text: function(){return numberalpha()+'万'}(),
-                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="text-align: center;padding-left:0px;padding-right:0px;"></p>
+                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="text-align: center;padding-left:0px;padding-right:0px;"></p>
                         </div>
                       </div>
                     </form>
@@ -61,12 +61,14 @@
             </div>
             <div class="col-sm-6 text-right pull-right" style="padding-top:260px;border:0px solid">
               <!-- <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div> -->
+              <div data-bind="visible: greater100_list().length !== 0">
               <div data-bind="foreach: greater100_list">
                 <div class="row">
                   <div class="col-sm-5 col-sm-offset-1" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
                   <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
                   <div class="col-sm-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;padding-left:0px;padding-right:0px;"></div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -94,11 +96,12 @@
           getWishes();
         }, 1000)
 
+//此定时器每隔一秒将 revolved_list 中的数据 push 到 revoling_list 中
         var fetch_index = 0;
         setInterval(function () {
-          //第一次先将前10个push进去，之后再一个一个push到列表中
-          if (fetch_index === 0) {
 
+          //第一次先将前6个push进去，之后再一个一个push到列表中
+          if (fetch_index === 0) {
             for (; fetch_index < 6 && fetch_index < goalListViewModel.revolved_list().length; fetch_index++) {
               var revolve = goalListViewModel.revolved_list()[fetch_index];
 
@@ -111,11 +114,6 @@
             }
             return
           }
-
-//                    保证走马灯中只有10个在显示
-//                          if (goalListViewModel.revolving_list().length > 10) {
-//                            goalListViewModel.revolving_list().splice(0, 1);
-//                          }
 
           if (fetch_index < goalListViewModel.revolved_list().length) {
             var revolve = goalListViewModel.revolved_list()[fetch_index];
