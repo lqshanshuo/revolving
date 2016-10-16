@@ -15,43 +15,57 @@
     <link rel="stylesheet" type="text/css" href="assets/reference/flat-ui/css/flat-ui.css">
     <link rel="stylesheet" type="text/css" href="assets/reference/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/self-owned/css/matrix.css">
+    <style>
+      .row > [class*="col-"] {
+          margin-bottom: 0px;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/average_background.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:688px">
-      <!--<div class="flat-matrix" >-->      
-      <div class="app-container">
-        <div class="row content-container">
-          <!-- 应用左侧NAV导航，可以应用与assist，帮助，过滤等辅助组件，默认自动收缩扩展，支持悬停（点击右上角按钮切换）-->
-          <div class="container">
-            <!--<p data-bind="text: list.length"></p>-->
-            <div class="row">
-              <div class="col-md-6">
-                <video width="320" height="240" controls>
-                  <source src="movie.wmv" type="video/wmv">
-                </video>
-              </div>
-              <div class="col-md-6 text-center">
-                <br>
-                <br>
-                <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div>                
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <!-- behavior=scroll, slide, alternate -->
-                <!-- direction=left,right,up,down -->
-                <!-- scrollamount=20 -->
-                <base href="<a href="http://blog.netfetch.cn" target="_blank">http://blog.netfetch.cn</a>">
-                <div align="center" id="demo" style="overflow:hidden;height:200px;width:95px;border-width:1px 1px 1px 1px;border-style:dotted dotted dotted dotted;">
-                  <div id="demo1">
-                    <!-- 定义内容-->
-                    <div>aaaaaaaaaaaaaaaaaa</div>
-                    <div>aaaaaaaaaaaaaaaaaa</div>
-                    <div>aaaaaaaaaaaaaaaaaa</div>
+    <div class="flat-matrix" style="background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%">
+      <!--<div class="flat-matrix" >-->
+      <div class="container-fluid">
+        <div id="screenDIV" class="row">
+          <div class="col-sm-6">
+            <video id="videoDIV" autoplay loop controls=false style="width:600px;height:100%">
+              <source src="assets/self-owned/img/zgpa/tree.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div id="rightDIV" class="col-sm-6" style="background-image: url(assets/self-owned/img/zgpa/zmd1.png);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%;">
+            <div class="col-sm-6 text-center" style="padding-top:260px;border:0px solid">
+              <!-- behavior=scroll, slide, alternate -->
+              <!-- direction=left,right,up,down -->
+              <!-- scrollamount=20 -->
+              <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=4>
+                <div data-bind="foreach: revolving_list">
+                  <div data-bind="if:$data">
+                    <form class="form-horizontal">
+                      <div class="form-group" style="margin-bottom: 0;">
+                        <div class="col-sm-6" style="padding-left: 0px;">
+                          <p data-bind="text: stringalpha" class="form-control-static" style="font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                        </div>
+                        <div class="col-sm-3" style="padding-left: 0px;">
+                          <p data-bind="text: name" class="form-control-static" style="font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                        </div>
+                        <div class="col-sm-3" style="padding-left: 0px;">
+                          <p data-bind="text: function(){return numberalpha()+'万'}(),
+                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="text-align: center;padding-left:0px;padding-right:0px;"></p>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                  <div id="demo2"></div>
+                </div>
+              </marquee>
+              <br>
+            </div>
+            <div class="col-sm-6 text-right pull-right" style="padding-top:260px;border:0px solid">
+              <!-- <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div> -->
+              <div data-bind="foreach: greater100_list">
+                <div class="row">
+                  <div class="col-sm-5 col-sm-offset-1" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;padding-left:0px;padding-right:0px;"></div>
                 </div>
               </div>
             </div>
@@ -66,123 +80,127 @@
     <script src="assets/self-owned/js/generic/generic_util.js"></script>
 
     <script language="javascript" type="text/javascript">
-                  $(document).ready(function () {
-                    getWishes();
+      var current_fetch_time = Date.now();
+      $(document).ready(function () {
+        // adjust page
+        setInterval(function () {
+          var width_video = document.body.clientWidth / 2;
+          $('#videoDIV').css('width', width_video);
+          $('#rightDIV').css('height', $('#videoDIV').css('height'));
+        }, 1000)
 
-                    setInterval(function () {
-                      getWishes();
-                    }, 3000)
-                  });
+        getWishes();
+        setInterval(function () {
+          getWishes();
+        }, 1000)
 
-                  /**** view model start ****/
-                  function GoalViewModel(department, name, wish) {
-                    var self = this;
-                    self.stringalpha = ko.observable(department);
-                    self.name = ko.observable(name);
-                    self.numberalpha = ko.observable(wish);
-                  }
+        var fetch_index = 0;
+        setInterval(function () {
+          //第一次先将前10个push进去，之后再一个一个push到列表中
+          if (fetch_index === 0) {
 
-                  function GoalListViewModel() {
-                    var self = this;
+            for (; fetch_index < 6 && fetch_index < goalListViewModel.revolved_list().length; fetch_index++) {
+              var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
+              goalListViewModel.revolving_list.push(goalViewModel);
+              if (goalViewModel.numberalpha() >= 100) {
+                goalListViewModel.greater100_list.push(goalViewModel);
+              }
+            }
+            return
+          }
 
-                    self.original_list = ko.observableArray();
-                    self.revolving_list = ko.observableArray();
+//                    保证走马灯中只有10个在显示
+//                          if (goalListViewModel.revolving_list().length > 10) {
+//                            goalListViewModel.revolving_list().splice(0, 1);
+//                          }
 
-                    self.wishList = ko.observableArray();
+          if (fetch_index < goalListViewModel.revolved_list().length) {
+            var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
+            goalListViewModel.revolving_list.push(goalViewModel);
+            fetch_index++;
+
+            if (goalViewModel.numberalpha() >= 100) {
+              goalListViewModel.greater100_list.push(goalViewModel);
+            }
+          }
+        }, 1000)
+      });
+
+      /**** view model start ****/
+      function GoalViewModel(department, name, wish) {
+        var self = this;
+        self.stringalpha = ko.observable(department);
+        self.name = ko.observable(name);
+        self.numberalpha = ko.observable(wish);
+      }
+
+      function GoalListViewModel() {
+        var self = this;
+
+        self.original_list = ko.observableArray();
+        self.revolved_list = ko.observableArray();
+        self.revolving_list = ko.observableArray();
+        self.greater100_list = ko.observableArray();
+
+        self.wishList = ko.observableArray();
 //        self.addWish = function (wish, origin) {
 //
 //        }
-                  }
-                  /**** view model end ****/
-
-                  var goalListViewModel = new GoalListViewModel();
-                  ko.applyBindings(goalListViewModel, document.getElementById('wishListDIV'));
-
-                  /**** server request && response handle start ****/
-                  var getWishes = function () {
-
-                    $.ajax({
-                      url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
-                      type: 'POST',
-                      success: function (json) {
-                        goalListViewModel.original_list(json.result);
-
-                        var results = json.result;
-                        for (var i = 0; i < results.length; i++) {
-                          var need_add = true;
-
-                          var server = results[i];
-                          for (var j = 0; j < goalListViewModel.revolving_list().length; j++) {
-                            var revolve = goalListViewModel.revolving_list()[j];
-                            if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
-                              //goal has been updated, remove original and update
-                              console.log("update")
-                              goalListViewModel.revolving_list().splice(j, 1);
-                              need_add = true;
-                            }
-                            if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
-                              console.log("the same")
-                              need_add = false;
-                            }
-                          }
-                          console.log(server)
-                          console.log(revolve)
-                          console.log(need_add)
-
-                          if (need_add) {
-//                var joinstr = results[i].stringalpha + " 部门 " + results[i].name + " " + results[i].numberalpha + " 万";
-
-                            var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
-                            goalListViewModel.revolving_list.push(goalViewModel);
-                          }
-                        }
-                      },
-                      error: function (json) {
-                        console.log("error");
-                      }
-                    })
-                  }
-
-                  var is_scroll = true;
-                  var changeScrollStatus = function () {
-                    is_scroll = !is_scroll;
-                    if (is_scroll) {
-                      document.getElementById('mymarquee').start();
-                    } else {
-                      document.getElementById('mymarquee').stop();
-                    }
-                  }
-                  $("#target").dblclick(function () {
-                    this.stop();
-                  });
-
-    </script>
-
-    <!-- 指向链接图片的URL -->
-
-
-    <script language="javascript" type="text/javascript">
-      <!--
-    var demo = document.getElementById("demo");
-      var demo1 = document.getElementById("demo1");
-      var demo2 = document.getElementById("demo2");
-      var speed = 10;    //滚动速度值，值越大速度越慢
-      demo2.innerHTML = demo1.innerHTML    //克隆demo2为demo1
-      function Marquee() {
-        if (demo2.offsetTop - demo.scrollTop <= 0)    //当滚动至demo1与demo2交界时
-          demo.scrollTop -= demo1.offsetHeight    //demo跳到最顶端
-        else {
-          demo.scrollTop++
-        }
       }
-      var MyMar = setInterval(Marquee, speed);        //设置定时器
-      demo.onmouseover = function () {
-        clearInterval(MyMar)
-      }    //鼠标经过时清除定时器达到滚动停止的目的
-      demo.onmouseout = function () {
-        MyMar = setInterval(Marquee, speed)
-      }    //鼠标移开时重设定时器
--->
+      /**** view model end ****/
+
+      var goalListViewModel = new GoalListViewModel();
+      ko.applyBindings(goalListViewModel, document.getElementById('wishListDIV'));
+
+      /**** server request && response handle start ****/
+      var getWishes = function () {
+
+        $.ajax({
+          url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
+          type: 'POST',
+          success: function (json) {
+            goalListViewModel.original_list(json.result);
+            var results = json.result;
+
+            for (var i = 0; i < results.length; i++) {
+              var need_add = true;
+              var server = results[i];
+
+              for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
+                var revolve = goalListViewModel.revolved_list()[j];
+                if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
+                  need_add = true;
+                }
+                if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
+                  need_add = false;
+                }
+              }
+
+              if (need_add) {
+//                if (result[i].numberbeta > current_fetch_time) {
+                  var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
+                  goalListViewModel.revolved_list.push(goalViewModel);
+//                }
+              }
+            }
+          },
+          error: function (json) {
+            console.log("error");
+          }
+        })
+      }
+
+      var is_scroll = true;
+      var changeScrollStatus = function () {
+        is_scroll = !is_scroll;
+        if (is_scroll) {
+          document.getElementById('mymarquee').start();
+        } else {
+          document.getElementById('mymarquee').stop();
+                  }
+                }
+                
+
     </script>
   </body>
 

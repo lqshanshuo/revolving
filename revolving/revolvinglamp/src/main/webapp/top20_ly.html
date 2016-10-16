@@ -16,11 +16,12 @@
     <link rel="stylesheet" type="text/css" href="assets/reference/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/self-owned/css/matrix.css">
     <style>
-      .row > [class*="col-"] {
-          margin-bottom: 0px;
-      }
+    .row > [class*="col-"] {
+        margin-bottom: 0px;
+    }
     </style>
   </head>
+
   <body>
     <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/top20_average.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:980px;height:980px;">
       <!--<div class="flat-matrix" >-->
@@ -34,12 +35,12 @@
               <div class="col-sm-offset-6 col-sm-6 text-left">
                 <div data-bind="foreach: list">
                   <div class="row">
-                    <div class="col-sm-4" data-bind="text: $data.stringalpha" style="font-weight: bold;font-size: 14px;letter-spacing: 2px; color:white;opacity: 1.0"></div>
-                    <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;font-size: 14px;letter-spacing: 2px; color:white;opacity: 1.0"></div>
-                    <div class="col-sm-3" data-bind="text: function(){return $data.numberalpha+'万'}(),
+                  <div class="col-sm-4" data-bind="text: $data.stringalpha" style="font-weight: bold;font-size: 14px;letter-spacing: 2px; color:white;opacity: 1.0"></div>
+                  <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;font-size: 14px;letter-spacing: 2px; color:white;opacity: 1.0"></div>
+                  <div class="col-sm-3" data-bind="text: function(){return $data.numberalpha+'万'}(),
 style: { color: $data.numberalpha>100 ?'#f6ff04':'white', fontSize:$data.numberalpha>100 ? '18px':'14px'}" style="font-weight: bold;letter-spacing: 2px; opacity: 1.0;"></div>
                   </div>
-                </div>
+                  </div>
                 <br><br><br><br><br><br>
               </div>
             </div>
@@ -53,7 +54,7 @@ style: { color: $data.numberalpha>100 ?'#f6ff04':'white', fontSize:$data.numbera
     <script src="assets/reference/knockout.js/knockout-3.3.0.js"></script>
     <script src="assets/reference/jquery-tiny-pubsub/tiny-pubsub.js"></script>
     <script src="assets/self-owned/js/generic/generic_util.js"></script>
-    <script src="assets/self-owned/js/generic/generic_modal.js"></script>    
+    <script src="assets/self-owned/js/generic/generic_modal.js"></script>
     <script src="assets/self-owned/js/generic/generic_validation.js"></script>
     <script>
       $(document).ready(function () {
@@ -73,14 +74,16 @@ style: { color: $data.numberalpha>100 ?'#f6ff04':'white', fontSize:$data.numbera
       var getWishes = function () {
 
         $.ajax({
-          url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
+          url: $.getRootPath() + '/newjson.json',
           type: 'POST',
           success: function (json) {
-            var results = json.result;
+            var jsonObj = JSON.parse(json);
+            // var results = json.result;
+            var results = jsonObj.result;
             var results = results.sort(sortWish)
-            top20ListViewModel.list(results.splice(0, 20))
+            top20ListViewModel.list(results.splice(0,20))
 
-            for (var i = 0; i < results.length; i++) {
+            for (var i=0; i<results.length; i++) {
               if (results[i].numberalpha === top20ListViewModel.list()[19].numberalpha) {
                 top20ListViewModel.list.push(results[i])
               } else {

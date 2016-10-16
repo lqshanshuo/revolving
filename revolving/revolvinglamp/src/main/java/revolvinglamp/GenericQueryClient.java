@@ -48,6 +48,7 @@ public class GenericQueryClient {
         attr.put("stringalpha", goal.getStringalpha());
         attr.put("name", goal.getName());
         attr.put("numberalpha", goal.getNumberalpha());
+        attr.put("numberbeta", goal.getCreatetime());
         query.setAttributes(attr);
 
         String jsonRequest = JsonUtil.toJsonWithoutEmpth(query);
@@ -55,7 +56,7 @@ public class GenericQueryClient {
         Map headers = new HashMap();
         headers.put("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 
-        HttpResponsePOJO pojo = HttpClientUtil.jsonRequest(genericQueryUrl + "/service_generic_query/api/cud/add", "queryJson="+jsonRequest, "POST", headers);
+        HttpResponsePOJO pojo = HttpClientUtil.jsonRequest(genericQueryUrl + "/service_generic_query/api/cud/add", "queryJson=" + jsonRequest, "POST", headers);
         return pojo;
     }
 
@@ -64,10 +65,11 @@ public class GenericQueryClient {
         query.setClassName("v2.service.generic.query.entity.Genericentity");
 
         Map attr = new HashMap();
-                attr.put("id", goal.getId());
+        attr.put("id", goal.getId());
         attr.put("stringalpha", goal.getStringalpha());
         attr.put("name", goal.getName());
         attr.put("numberalpha", goal.getNumberalpha());
+        attr.put("numberbeta", goal.getCreatetime());
         query.setAttributes(attr);
 
         String jsonRequest = JsonUtil.toJsonWithoutEmpth(query);
@@ -75,7 +77,7 @@ public class GenericQueryClient {
         Map headers = new HashMap();
         headers.put("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 
-        HttpResponsePOJO pojo = HttpClientUtil.jsonRequest(genericQueryUrl + "/service_generic_query/api/cud/update", "queryJson="+jsonRequest, "POST", headers);
+        HttpResponsePOJO pojo = HttpClientUtil.jsonRequest(genericQueryUrl + "/service_generic_query/api/cud/update", "queryJson=" + jsonRequest, "POST", headers);
 
         return pojo;
     }
@@ -85,6 +87,22 @@ public class GenericQueryClient {
         query.setClassName("v2.service.generic.query.entity.Genericentity");
         query.setPageMaxSize(1000);
         query.setCurrentPageNumber(1);
+
+        String jsonRequest = JsonUtil.toJsonWithoutEmpth(query);
+        HttpResponsePOJO pojo = HttpClientUtil.jsonRequest(genericQueryUrl + "/service_generic_query/api/query/native", jsonRequest, "POST", null);
+
+        return pojo;
+    }
+
+    public static HttpResponsePOJO getGoalsByDepartment(String department) throws IOException, Exception {
+        QueryPOJO query = new QueryPOJO();
+        query.setClassName("v2.service.generic.query.entity.Genericentity");
+        query.setPageMaxSize(1000);
+        query.setCurrentPageNumber(1);
+
+        Map eqMap = new HashMap();
+        eqMap.put("stringalpha", department);
+        query.setEqMap(eqMap);
 
         String jsonRequest = JsonUtil.toJsonWithoutEmpth(query);
         HttpResponsePOJO pojo = HttpClientUtil.jsonRequest(genericQueryUrl + "/service_generic_query/api/query/native", jsonRequest, "POST", null);

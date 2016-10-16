@@ -26,26 +26,27 @@
           <div class="container">
             <!--<p data-bind="text: list.length"></p>-->
             <div class="row">
-              <div class="col-md-12">
-                <div class="col-md-5">
-<!--                  <video autoplay loop controls>
+              <div class="col-sm-12">
+                <div class="col-sm-6" >
+                  <video id="videoDIV" autoplay loop controls="false" style="width:600px;height:100%">
                     <source src="assets/self-owned/img/zgpa/tree.mp4" type="video/mp4">
-                  </video>-->
+                  </video>
                 </div>
-                <div class="col-md-5 text-center" style="padding-top:20%">
-<!--                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>-->
-                  <!-- behavior=scroll, slide, alternate -->
-                  <!-- direction=left,right,up,down -->
-                  <!-- scrollamount=20 -->
-                  <div>
-                    <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=4  data-bind="foreach: revolving_list">
-                      <div >
+                <div id="rightDIV" class="col-sm-6" style="background-image: url(assets/self-owned/img/zgpa/zmd1.png);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%;">
+                  <div class="col-sm-8 text-center" style="padding-top:20%">
+                    <!--                  <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>-->
+                    <!-- behavior=scroll, slide, alternate -->
+                    <!-- direction=left,right,up,down -->
+                    <!-- scrollamount=20 -->
+                    <div>
+                      <!--<marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=4>-->
+                      <div  data-bind="foreach: revolving_list">
                         <form class="form-horizontal" >
                           <div class="form-group" style="margin-bottom: 0;">
                             <div class="col-md-1"></div>
@@ -63,24 +64,21 @@
 style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>100 ? '25px':'18px'}" 
                                  class="form-control-static" style="text-align: left;opacity: 0.5"></p>
                             </div>
-                            <!--                      <div class="col-sm-8">
-                                                    results[i].stringalpha + " 部门 " + results[i].name + " " + results[i].numberalpha + " 万"
-                                                    <p data-bind="text: $data.joinstr" class="form-control-static" style="font-weight: bold;font-size: 18px;letter-spacing: 2px; color:white;opacity: 0.5">ID-1234567890</p>
-                                                  </div>-->
                           </div>
                         </form>
                       </div>
-                    </marquee>
-                    <br>
+                      <!--</marquee>-->
+                      <br>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-2 text-right pull-right" style="padding-top:20%">
-                  <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div>                
-                  <div data-bind="foreach: greater100_list">
-                    <div class="row">
-                      <div class="col-md-offset-2 col-md-4" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
-                      <div class="col-md-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
-                      <div class="col-md-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px; opacity: 0.5;"></div>
+                  <div class="col-sm-6 text-right pull-right" style="padding-top:20%">
+                    <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div>                
+                    <div data-bind="foreach: greater100_list">
+                      <div class="row">
+                        <div class="col-md-offset-2 col-md-4" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
+                        <div class="col-md-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;opacity: 0.5"></div>
+                        <div class="col-md-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px; opacity: 0.5;"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -98,122 +96,127 @@ style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>100
     <script src="assets/self-owned/js/generic/generic_util.js"></script>
 
     <script language="javascript" type="text/javascript">
-                    $(document).ready(function () {
-                      getWishes();
+                      $(document).ready(function () {
+                        // adjust page
+                        setInterval(function () {
+                          var width_video = document.body.clientWidth / 2;
+                          $('#videoDIV').css('width', width_video);
+                          $('#rightDIV').css('height', $('#videoDIV').css('height'));
+                        }, 1000)
 
-                      setInterval(function () {
                         getWishes();
-                      }, 1000)
+                        setInterval(function () {
+                          getWishes();
+                        }, 1000)
 
-                      var fetch_index = 0;
-                      setInterval(function () {
-                        //第一次先将前10个push进去，之后再一个一个push到列表中
-                        if (fetch_index === 0) {
-                          for (; fetch_index < 10 || fetch_index < goalListViewModel.revolved_list().length; fetch_index++) {
+                        var fetch_index = 0;
+                        setInterval(function () {
+                          //第一次先将前10个push进去，之后再一个一个push到列表中
+                          if (fetch_index === 0) {
+                            for (; fetch_index < 10 || fetch_index < goalListViewModel.revolved_list().length; fetch_index++) {
+                              var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
+                              goalListViewModel.revolving_list.push(goalViewModel);
+
+                              if (goalViewModel.numberalpha() >= 100) {
+                                goalListViewModel.greater100_list.push(goalViewModel);
+                              }
+                            }
+
+                            return
+                          }
+
+                          //保证走马灯中只有10个在显示
+                          if (goalListViewModel.revolving_list().length > 10) {
+                            goalListViewModel.revolving_list().splice(0, 1);
+                          }
+
+                          if (fetch_index < goalListViewModel.revolved_list().length) {
                             var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
                             goalListViewModel.revolving_list.push(goalViewModel);
+                            fetch_index++;
 
                             if (goalViewModel.numberalpha() >= 100) {
                               goalListViewModel.greater100_list.push(goalViewModel);
                             }
                           }
+                        }, 1000)
+                      });
 
-                          return
-                        }
+                      /**** view model start ****/
+                      function GoalViewModel(department, name, wish) {
+                        var self = this;
+                        self.stringalpha = ko.observable(department);
+                        self.name = ko.observable(name);
+                        self.numberalpha = ko.observable(wish);
+                      }
 
-                        //保证走马灯中只有10个在显示
-                        if (goalListViewModel.revolved_list().length > 10) {
-                          console.log(2222)
-                          goalListViewModel.revolved_list().splice(0, 1);
-                        }
+                      function GoalListViewModel() {
+                        var self = this;
 
-                        if (fetch_index < goalListViewModel.revolved_list().length) {
-                          var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
-                          goalListViewModel.revolving_list.push(goalViewModel);
-                          fetch_index++;
+                        self.original_list = ko.observableArray();
+                        self.revolved_list = ko.observableArray();
+                        self.revolving_list = ko.observableArray();
+                        self.greater100_list = ko.observableArray();
 
-                          if (goalViewModel.numberalpha() >= 100) {
-                            goalListViewModel.greater100_list.push(goalViewModel);
-                          }
-                        }
-                      }, 1000)
-                    });
-
-                    /**** view model start ****/
-                    function GoalViewModel(department, name, wish) {
-                      var self = this;
-                      self.stringalpha = ko.observable(department);
-                      self.name = ko.observable(name);
-                      self.numberalpha = ko.observable(wish);
-                    }
-
-                    function GoalListViewModel() {
-                      var self = this;
-
-                      self.original_list = ko.observableArray();
-                      self.revolved_list = ko.observableArray();
-                      self.revolving_list = ko.observableArray();
-                      self.greater100_list = ko.observableArray();
-
-                      self.wishList = ko.observableArray();
+                        self.wishList = ko.observableArray();
 //        self.addWish = function (wish, origin) {
 //
 //        }
-                    }
-                    /**** view model end ****/
-
-                    var goalListViewModel = new GoalListViewModel();
-                    ko.applyBindings(goalListViewModel, document.getElementById('wishListDIV'));
-
-                    /**** server request && response handle start ****/
-                    var getWishes = function () {
-
-                      $.ajax({
-                        url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
-                        type: 'POST',
-                        success: function (json) {
-                          goalListViewModel.original_list(json.result);
-                          var results = json.result;
-
-                          for (var i = 0; i < results.length; i++) {
-                            var need_add = true;
-                            var server = results[i];
-
-                            for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
-                              var revolve = goalListViewModel.revolved_list()[j];
-                              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
-                                need_add = true;
-                              }
-                              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
-                                need_add = false;
-                              }
-                            }
-
-                            if (need_add) {
-
-                              var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
-                              goalListViewModel.revolved_list.push(goalViewModel);
-                            }
-                          }
-                        },
-                        error: function (json) {
-                          console.log("error");
-                        }
-                      })
-                    }
-
-                    var is_scroll = true;
-                    var changeScrollStatus = function () {
-                      is_scroll = !is_scroll;
-                      if (is_scroll) {
-                        document.getElementById('mymarquee').start();
-                      } else {
-                        document.getElementById('mymarquee').stop();
                       }
-                    }
-                    $("#target").dblclick(function () {
-                      this.stop();
-                    });
+                      /**** view model end ****/
+
+                      var goalListViewModel = new GoalListViewModel();
+                      ko.applyBindings(goalListViewModel, document.getElementById('wishListDIV'));
+
+                      /**** server request && response handle start ****/
+                      var getWishes = function () {
+
+                        $.ajax({
+                          url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
+                          type: 'POST',
+                          success: function (json) {
+                            goalListViewModel.original_list(json.result);
+                            var results = json.result;
+
+                            for (var i = 0; i < results.length; i++) {
+                              var need_add = true;
+                              var server = results[i];
+
+                              for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
+                                var revolve = goalListViewModel.revolved_list()[j];
+                                if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
+                                  need_add = true;
+                                }
+                                if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
+                                  need_add = false;
+                                }
+                              }
+
+                              if (need_add) {
+
+                                var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
+                                goalListViewModel.revolved_list.push(goalViewModel);
+                              }
+                            }
+                          },
+                          error: function (json) {
+                            console.log("error");
+                          }
+                        })
+                      }
+
+                      var is_scroll = true;
+                      var changeScrollStatus = function () {
+                        is_scroll = !is_scroll;
+                        if (is_scroll) {
+                          document.getElementById('mymarquee').start();
+                        } else {
+                          document.getElementById('mymarquee').stop();
+                        }
+                      }
+                      $("#target").dblclick(function () {
+                        this.stop();
+                      });
 
     </script>
   </body>

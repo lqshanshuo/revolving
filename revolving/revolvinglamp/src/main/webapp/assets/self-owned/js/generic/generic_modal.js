@@ -86,7 +86,7 @@ function GenericModalViewModel() {
 
   self.clearMessageDIV = function () {
     self.errorMessage.removeAll();
-    goalInputViewModel.bussiness_validate.hasError(false);
+    self.hasError(false);
   };
 
   self.response = function(successFlag,resultTitle,resultSubTitle,resultContent){

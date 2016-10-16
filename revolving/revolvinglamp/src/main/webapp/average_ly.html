@@ -15,11 +15,12 @@
     <link rel="stylesheet" type="text/css" href="assets/reference/flat-ui/css/flat-ui.css">
     <link rel="stylesheet" type="text/css" href="assets/reference/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/self-owned/css/matrix.css">
-    <style>
-      .row > [class*="col-"] {
-          margin-bottom: 0px;
-      }
-    </style>
+
+<style>
+.row > [class*="col-"] {
+    margin-bottom: 0px;
+}
+</style>
   </head>
 
   <body>
@@ -35,7 +36,7 @@
               <div class="col-sm-offset-7 col-sm-5 text-left">
                 <div data-bind="foreach: list">
                   <div class="row">
-                    <div class="col-sm-6" data-bind="text: $data.department" style="font-weight: bold;font-size: 14px;letter-spacing: 2px; color:white;opacity: 1.0"></div>
+                    <div class="col-sm-6" data-bind="text: $data.department" style="font-weight: bold;font-size: 18px;letter-spacing: 2px; color:white;opacity: 1.0"></div>
                     <!--<div class="col-sm-1" style="font-weight: bold;font-size: 18px;letter-spacing: 2px; color:#f6ff04;opacity: 0.5">：</div>-->
                     <div class="col-sm-6" data-bind="text: function(){return $data.avg()+'万'}(),style: { color: $data.avg()>100 ?'#f6ff04':'white', fontSize:$data.avg()>100 ? '25px':'18px'}" style="font-weight: bold;letter-spacing: 2px;opacity: 1.0"></div>
                     <!--<div class="col-sm-4" style="font-weight: bold;font-size: 18px;letter-spacing: 2px; color:white;opacity: 0.5">万</div>-->
@@ -54,7 +55,7 @@
     <script src="assets/reference/knockout.js/knockout-3.3.0.js"></script>
     <script src="assets/reference/jquery-tiny-pubsub/tiny-pubsub.js"></script>
     <script src="assets/self-owned/js/generic/generic_util.js"></script>
-    <script src="assets/self-owned/js/generic/generic_modal.js"></script>    
+    <script src="assets/self-owned/js/generic/generic_modal.js"></script>
     <script src="assets/self-owned/js/generic/generic_validation.js"></script>
     <script>
       $(document).ready(function () {
@@ -82,10 +83,13 @@
       var getWishes = function () {
 
         $.ajax({
-          url: $.getServerRoot() + '/revolvinglamp/api/goal/getallgoals',
+          // url: $.getRootPath() + '/revolvinglamp/api/goal/getallgoals',
+          url: $.getRootPath() + '/newjson.json',
           type: 'POST',
           success: function (json) {
-            var results = json.result;
+            var jsonObj = JSON.parse(json);
+            // var results = json.result;
+            var results = jsonObj.result;
 //            departmentAverageList.list([])
             for (var i = 0; i < results.length; i++) {
               var need_add = true;
@@ -120,7 +124,7 @@
               }
             }
 
-//计算平均数  
+//计算平均数
             var list = departmentAverageList.list();
             for (var j = 0; j < list.length; j++) {
               var avg = (Number(list[j].sum()) / Number(list[j].num())).toFixed(2);
