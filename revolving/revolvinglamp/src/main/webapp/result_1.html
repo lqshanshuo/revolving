@@ -100,10 +100,13 @@
           if (fetch_index === 0) {
 
             for (; fetch_index < 6 && fetch_index < goalListViewModel.revolved_list().length; fetch_index++) {
-              var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
-              goalListViewModel.revolving_list.push(goalViewModel);
-              if (goalViewModel.numberalpha() >= 100) {
-                goalListViewModel.greater100_list.push(goalViewModel);
+              var revolve = goalListViewModel.revolved_list()[fetch_index];
+
+              removeRepeat(revolve);
+
+              goalListViewModel.revolving_list.push(revolve);
+              if (revolve.numberalpha() >= 100) {
+                goalListViewModel.greater100_list.push(revolve);
               }
             }
             return
@@ -115,16 +118,35 @@
 //                          }
 
           if (fetch_index < goalListViewModel.revolved_list().length) {
-            var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
-            goalListViewModel.revolving_list.push(goalViewModel);
-            fetch_index++;
+            var revolve = goalListViewModel.revolved_list()[fetch_index];
 
-            if (goalViewModel.numberalpha() >= 100) {
-              goalListViewModel.greater100_list.push(goalViewModel);
+            removeRepeat(revolve);
+
+            goalListViewModel.revolving_list.push(revolve);
+
+            if (revolve.numberalpha() >= 100) {
+              goalListViewModel.greater100_list.push(revolve);
             }
+            fetch_index++;
           }
         }, 1000)
       });
+
+      function removeRepeat(revolve) {
+        //遍历循环列表，判断数据是否已经存在，若更新了数据，则先移除原来的            
+        for (var j = 0; j < goalListViewModel.revolving_list().length; j++) {
+          var revolving = goalListViewModel.revolving_list()[j];
+          if (revolving.name() === revolve.name() && revolving.stringalpha() === revolving.stringalpha() && revolving.numberalpha() !== revolve.numberalpha()) {
+            goalListViewModel.revolving_list().splice(j, 1);
+          }
+        }
+        for (var j = 0; j < goalListViewModel.greater100_list().length; j++) {
+          var revolving = goalListViewModel.greater100_list()[j];
+          if (revolving.name() === revolve.name() && revolving.stringalpha() === revolving.stringalpha() && revolving.numberalpha() !== revolve.numberalpha()) {
+            goalListViewModel.greater100_list().splice(j, 1);
+          }
+        }
+      }
 
       /**** view model start ****/
       function GoalViewModel(department, name, wish) {
@@ -169,6 +191,8 @@
               for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
                 var revolve = goalListViewModel.revolved_list()[j];
                 if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
+//                  goalListViewModel.revolved_list().splice(j, 1);
+//                  goalListViewModel.revolving_list().splice(j, 1);
                   need_add = true;
                 }
                 if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
