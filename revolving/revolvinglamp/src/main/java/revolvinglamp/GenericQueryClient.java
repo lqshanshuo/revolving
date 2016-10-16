@@ -48,7 +48,7 @@ public class GenericQueryClient {
         attr.put("stringalpha", goal.getStringalpha());
         attr.put("name", goal.getName());
         attr.put("numberalpha", goal.getNumberalpha());
-        attr.put("numberbeta", goal.getCreatetime());
+        attr.put("numberbeta", goal.getNumberbeta());
         query.setAttributes(attr);
 
         String jsonRequest = JsonUtil.toJsonWithoutEmpth(query);
@@ -69,7 +69,7 @@ public class GenericQueryClient {
         attr.put("stringalpha", goal.getStringalpha());
         attr.put("name", goal.getName());
         attr.put("numberalpha", goal.getNumberalpha());
-        attr.put("numberbeta", goal.getCreatetime());
+        attr.put("numberbeta", goal.getNumberbeta());
         query.setAttributes(attr);
 
         String jsonRequest = JsonUtil.toJsonWithoutEmpth(query);

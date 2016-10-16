@@ -177,10 +177,10 @@
               }
 
               if (need_add) {
-//                if (result[i].numberbeta > current_fetch_time) {
+                if (server.numberbeta > current_fetch_time) {
                   var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
                   goalListViewModel.revolved_list.push(goalViewModel);
-//                }
+                }
               }
             }
           },
