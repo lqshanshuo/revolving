@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The prototype website of web framework">
   <meta name="author" content="LY">
-  <title>Matrix</title>
+  <title>中国平安</title>
   <link rel="shortcut icon" href="assets/self-owned/ico/favicon.png">
   <link rel="shortcut icon" href="assets/self-owned/ico/favicon.png">
   <link rel="stylesheet" type="text/css" href="assets/reference/bootstrap/css/bootstrap.min.css">
@@ -16,9 +16,9 @@
   <link rel="stylesheet" type="text/css" href="assets/reference/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/self-owned/css/matrix.css">
   <style>
-  .row > [class*="col-"] {
+    .row > [class*="col-"] {
       margin-bottom: 0px;
-  }
+    }
   </style>
 </head>
 
@@ -28,16 +28,16 @@
     <div class="container-fluid">
       <div id="screenDIV" class="row">
         <div class="col-sm-6">
-          <video id="videoDIV" autoplay loop controls="false" style="width:600px;height:100%">
+          <video id="videoDIV" autoplay loop controls=false style="width:600px;height:100%">
             <source src="assets/self-owned/img/zgpa/tree.mp4" type="video/mp4">
           </video>
         </div>
         <div id="rightDIV" class="col-sm-6" style="background-image: url(assets/self-owned/img/zgpa/zmd1.png);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%;">
-          <div class="col-sm-6 text-center" style="padding-top:260px;border:0px solid">
+          <div class="col-sm-6 text-center" style="padding-top:280px;border:0px solid">
             <!-- behavior=scroll, slide, alternate -->
             <!-- direction=left,right,up,down -->
             <!-- scrollamount=20 -->
-            <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=4>
+            <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=3>
               <div data-bind="foreach: revolving_list">
                 <div data-bind="if:$data">
                   <form class="form-horizontal">
@@ -50,7 +50,7 @@
                       </div>
                       <div class="col-sm-3" style="padding-left: 0px;">
                         <p data-bind="text: function(){return numberalpha()+'万'}(),
-                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="text-align: center;padding-left:0px;padding-right:0px;"></p>
+                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="text-align: center;padding-left:0px;padding-right:0px;"></p>
                       </div>
                     </div>
                   </form>
@@ -59,13 +59,15 @@
             </marquee>
             <br>
           </div>
-          <div class="col-sm-6 text-right pull-right" style="padding-top:260px;border:0px solid">
+          <div class="col-sm-6 text-right pull-right" style="padding-top:280px;border:0px solid">
             <!-- <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div> -->
-            <div data-bind="foreach: greater100_list">
-              <div class="row">
-                <div class="col-sm-5 col-sm-offset-1" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
-                <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
-                <div class="col-sm-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;padding-left:0px;padding-right:0px;"></div>
+            <div data-bind="visible: greater100_list().length !== 0">
+              <div data-bind="foreach: greater100_list">
+                <div class="row">
+                  <div class="col-sm-5 col-sm-offset-1" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;padding-left:0px;padding-right:0px;"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -80,6 +82,7 @@
   <script src="assets/self-owned/js/generic/generic_util.js"></script>
 
   <script language="javascript" type="text/javascript">
+    var current_fetch_time = Date.now();
     $(document).ready(function() {
       // adjust page
       setInterval(function() {
@@ -88,43 +91,56 @@
         $('#rightDIV').css('height', $('#videoDIV').css('height'));
       }, 1000)
 
-      getWishes();
       setInterval(function() {
         getWishes();
       }, 1000)
 
+      //此定时器每隔一秒将 revolved_list 中的数据 push 到 revoling_list 中
       var fetch_index = 0;
       setInterval(function() {
-        //第一次先将前10个push进去，之后再一个一个push到列表中
-        if (fetch_index === 0) {
-
-          for (; fetch_index < 100 && fetch_index < goalListViewModel.revolved_list().length; fetch_index++) {
-            var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
-            goalListViewModel.revolving_list.push(goalViewModel);
-            if (goalViewModel.numberalpha() >= 100) {
-              goalListViewModel.greater100_list.push(goalViewModel);
-            }
-          }
-
-          return
-        }
-
-        //                    保证走马灯中只有10个在显示
-        // if (goalListViewModel.revolving_list().length > 10) {
-        //   goalListViewModel.revolving_list().splice(0, 1);
-        // }
 
         if (fetch_index < goalListViewModel.revolved_list().length) {
-          var goalViewModel = goalListViewModel.revolved_list()[fetch_index];
-          goalListViewModel.revolving_list.push(goalViewModel);
-          fetch_index++;
+          var revolve = goalListViewModel.revolved_list()[fetch_index];
 
-          if (goalViewModel.numberalpha() >= 100) {
-            goalListViewModel.greater100_list.push(goalViewModel);
+          updateRepeat(revolve);
+
+          goalListViewModel.revolving_list.push(revolve);
+
+          if (revolve.numberalpha() >= 100) {
+            goalListViewModel.greater100_list.push(revolve);
           }
+          fetch_index++;
         }
-      }, 1500)
+      }, 1000)
     });
+
+    //对每一个原子进行更新检查
+    function updateRepeat(revolve) {
+      update_marquee_list(revolve);
+      update_greater_than_100_list(revolve);
+    }
+
+    //更新走马灯信息
+    function update_marquee_list(item) {
+      var revolve = item;
+      //遍历循环列表，判断数据是否已经存在，若更新了数据，则先移除原来的
+      for (var j = 0; j < goalListViewModel.revolving_list().length; j++) {
+        var revolving = goalListViewModel.revolving_list()[j];
+        if (revolving.name() === revolve.name() && revolving.stringalpha() === revolving.stringalpha() && revolving.numberalpha() !== revolve.numberalpha()) {
+          goalListViewModel.revolving_list.splice(j, 1);
+        }
+      }
+    }
+    //更新目标破百万信息
+    function update_greater_than_100_list(item) {
+      var revolve = item;
+      for (var j = 0; j < goalListViewModel.greater100_list().length; j++) {
+        var revolving = goalListViewModel.greater100_list()[j];
+        if (revolving.name() === revolve.name() && revolving.stringalpha() === revolving.stringalpha() && revolving.numberalpha() !== revolve.numberalpha()) {
+          goalListViewModel.greater100_list.splice(j, 1);
+        }
+      }
+    }
 
     /**** view model start ****/
     function GoalViewModel(department, name, wish) {
@@ -156,13 +172,20 @@
     var getWishes = function() {
 
       $.ajax({
-        // url: $.getRootPath() + '/revolvinglamp/api/goal/getallgoals',
-        url: $.getRootPath() + '/newjson.json',
+        url: $.getRootPath() + '/api/goal/getallgoals',
         type: 'POST',
         success: function(json) {
-          var jsonObj = JSON.parse(json);
-          // var results = json.result;
-          var results = jsonObj.result;
+
+
+          var results =null;
+          if(!jQuery.isPlainObject(json)){
+            var jsonObj = JSON.parse(json);
+            results = jsonObj.result;
+          }else{
+            results = json.result;
+          }
+
+          goalListViewModel.original_list(results);
 
           for (var i = 0; i < results.length; i++) {
             var need_add = true;
@@ -171,6 +194,8 @@
             for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
               var revolve = goalListViewModel.revolved_list()[j];
               if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
+                //                  goalListViewModel.revolved_list().splice(j, 1);
+                //                  goalListViewModel.revolving_list().splice(j, 1);
                 need_add = true;
               }
               if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
@@ -179,9 +204,10 @@
             }
 
             if (need_add) {
-
-              var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
-              goalListViewModel.revolved_list.push(goalViewModel);
+              if (server.numberbeta > current_fetch_time) {
+                var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
+                goalListViewModel.revolved_list.push(goalViewModel);
+              }
             }
           }
         },
@@ -200,9 +226,6 @@
         document.getElementById('mymarquee').stop();
       }
     }
-    $("#target").dblclick(function() {
-      this.stop();
-    });
   </script>
 </body>
 
