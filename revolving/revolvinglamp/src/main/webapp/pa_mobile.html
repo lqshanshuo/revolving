@@ -159,7 +159,7 @@
         var data = {
           'queryJson': $.toJSON(requestPOJO)
         };
-        $.serverRequest($.getServerRoot() + '/revolvinglamp/api/goal/add', data, "ADD_SUCCESS_LISTENER", "ADD_FAILED_LISTENER", "ADD_FAILED_LISTENER");
+        $.serverRequest($.getRootPath() + '/api/goal/add', data, "ADD_SUCCESS_LISTENER", "ADD_FAILED_LISTENER", "ADD_FAILED_LISTENER");
       }
     }
 
