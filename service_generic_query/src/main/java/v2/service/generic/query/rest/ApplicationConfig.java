@@ -24,7 +24,6 @@ public class ApplicationConfig extends Application {
         resources.add(v2.service.generic.query.rest.CUDResource.class);
         resources.add(v2.service.generic.query.rest.GenericCacheResource.class);
         resources.add(v2.service.generic.query.rest.QueryResource.class);
-        resources.add(v2.service.generic.query.rest.ShareResource.class);
     }
     
 }
