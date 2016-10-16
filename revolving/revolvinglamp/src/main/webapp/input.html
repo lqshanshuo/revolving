@@ -112,69 +112,77 @@
     <script src="assets/self-owned/js/generic/generic_modal.js"></script>    
     <script src="assets/self-owned/js/generic/generic_validation.js"></script>
     <script>
-                          $(document).ready(function () {
-                          });
+                             $(document).ready(function () {
+                             });
 
-                          function GoalInputViewModel() {
-                            var self = this;
-                            self.hasResponse = ko.observable(false)
-                            self.bussiness = new BusinessViewModel();
-                            self.bussiness_validate = new GenericModalViewModel();
-                          }
+                             function GoalInputViewModel() {
+                               var self = this;
+                               self.hasResponse = ko.observable(false)
+                               self.bussiness = new BusinessViewModel();
+                               self.bussiness_validate = new GenericModalViewModel();
+                             }
 
-                          function BusinessViewModel() {
-                            var self = this;
-                            self.department = ko.observable();
-                            self.name = ko.observable();
-                            self.wish = ko.observable();
-                          }
+                             function BusinessViewModel() {
+                               var self = this;
+                               self.department = ko.observable();
+                               self.name = ko.observable();
+                               self.wish = ko.observable();
+                             }
 
-                          // *******YOUR SHOULD CODING IN HERE:*******
-                          var businessValidation = function () {
-                            var errorMessages = [];
-                            //validate logic...
+                             // *******YOUR SHOULD CODING IN HERE:*******
+                             var businessValidation = function () {
+                               var errorMessages = [];
+                               //validate logic...
 
-                            //validate
-                            ValidationPOJO.validate("部门", goalInputViewModel.bussiness.department(), errorMessages, ['KEY_NOT_NULL']);
-                            ValidationPOJO.validate("姓名", goalInputViewModel.bussiness.name(), errorMessages, ['KEY_NOT_NULL']);
-                            ValidationPOJO.validate("目标", goalInputViewModel.bussiness.wish(), errorMessages, ['KEY_NOT_NULL', 'KEY_NOT_NEGATIVE', 'KEY_MUST_NUMBER', 'KEY_NOT_MAX']);
+                               //validate
+                               ValidationPOJO.validate("部门", goalInputViewModel.bussiness.department(), errorMessages, ['KEY_NOT_NULL']);
+                               ValidationPOJO.validate("姓名", goalInputViewModel.bussiness.name(), errorMessages, ['KEY_NOT_NULL']);
+                               ValidationPOJO.validate("目标", goalInputViewModel.bussiness.wish(), errorMessages, ['KEY_NOT_NULL', 'KEY_NOT_NEGATIVE', 'KEY_MUST_NUMBER', 'KEY_NOT_MAX']);
 
-                            return errorMessages;
-                          }
+                               return errorMessages;
+                             }
 
-                          var goalInputViewModel = new GoalInputViewModel();
-                          ko.applyBindings(goalInputViewModel, document.getElementById('goal_input_div'));
+                             var goalInputViewModel = new GoalInputViewModel();
+                             ko.applyBindings(goalInputViewModel, document.getElementById('goal_input_div'));
 
-                          var runService = function () {
-                            if (!goalInputViewModel.bussiness_validate.validation(businessValidation)) {
-                              return;
-                            } else {
-                              console.log("Validation Success, go to the function invoke..");
-                              var requestPOJO = {
-                                "stringalpha": goalInputViewModel.bussiness.department(),
-                                "numberbeta": Date.now(),
-                                "name": goalInputViewModel.bussiness.name(),
-                                "numberalpha": Number(goalInputViewModel.bussiness.wish())
-                              };
-                              var data = {
-                                'queryJson': $.toJSON(requestPOJO)
-                              };
-                              $.serverRequest($.getServerRoot() + '/revolvinglamp/api/goal/add', data, "ADD_SUCCESS_LISTENER", "ADD_FAILED_LISTENER", "ADD_FAILED_LISTENER");
-                            }
-                          }
+                             var runService = function () {
+                               if (!goalInputViewModel.bussiness_validate.validation(businessValidation)) {
+                                 return;
+                               } else {
+                                 console.log("Validation Success, go to the function invoke..");
+                                 var requestPOJO = {
+                                   "stringalpha": goalInputViewModel.bussiness.department(),
+                                   "numberbeta": Date.now(),
+                                   "name": goalInputViewModel.bussiness.name(),
+                                   "numberalpha": Number(goalInputViewModel.bussiness.wish())
+                                 };
+                                 var data = {
+                                   'queryJson': $.toJSON(requestPOJO)
+                                 };
+                                 $.serverRequest($.getServerRoot() + '/revolvinglamp/api/goal/add', data, "ADD_SUCCESS_LISTENER", "ADD_FAILED_LISTENER", "ADD_FAILED_LISTENER");
+                               }
+                             }
 
-                          $.subscribe("ADD_SUCCESS_LISTENER", successAddListener);
-                          $.subscribe("ADD_FAILED_LISTENER", failedAddListener);
+                             $.subscribe("ADD_SUCCESS_LISTENER", successAddListener);
+                             $.subscribe("ADD_FAILED_LISTENER", failedAddListener);
 
-                          function successAddListener() {
-                            goalInputViewModel.hasResponse(true);
-                            $('#respMessagesDIV').text("您已经提交成功啦！重复提交将会覆盖之前的数据哟！")
-                          }
+                             function successAddListener() {
+                               if (arguments && arguments[1]) {
+                                 var resp = JSON.parse(arguments[1]);
+                                 console.log(resp.hasError)
+                                 goalInputViewModel.hasResponse(true);
+                                 if (resp.hasError) {
+                                   $('#respMessagesDIV').text("提交失败！请稍候重试～")
+                                 } else {
+                                   $('#respMessagesDIV').text("您已经提交成功啦！重复提交将会覆盖之前的数据哟！")
+                                 }
+                               }
+                             }
 
-                          function failedAddListener() {
-                            goalInputViewModel.hasResponse(true);
-                            $('#respMessagesDIV').text("提交失败！请稍候重试～")
-                          }
+                             function failedAddListener() {
+                               goalInputViewModel.hasResponse(true);
+                               $('#respMessagesDIV').text("提交失败！请稍候重试～")
+                             }
 
     </script>
   </body>
