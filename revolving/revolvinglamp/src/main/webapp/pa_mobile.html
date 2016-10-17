@@ -63,7 +63,7 @@
                 <form class="form-horizontal">
                   <div class="form-group">
                     <label class="col-xs-3 control-label text-right" style="padding-right: 0px;padding-left: 0px;margin-top: -6px;">
-                      <span style="font-weight: bold;font-size: 23px;letter-spacing: 2px; color:white;opacity: 1.0">部门</span>
+                      <span style="font-weight: bold;font-size: 23px;letter-spacing: 2px; color:white;opacity: 1.0;background-color: #ff9800;padding:6px 10px">机构</span>
                     </label>
                     <div class="col-xs-6 ">
                       <input data-bind="value:department" type="text" class="form-control" placeholder="">
@@ -71,7 +71,7 @@
                   </div>
                   <div class="form-group">
                     <label class="col-xs-3 control-label text-right" style="padding-right: 0px;padding-left: 0px;margin-top: -6px;">
-                      <span style="font-weight: bold;font-size: 23px;letter-spacing: 2px; color:white;opacity: 1.0">姓名</span>
+                      <span style="font-weight: bold;font-size: 23px;letter-spacing: 2px; color:white;opacity: 1.0;background-color: #ff9800;padding:6px 10px">姓名</span>
                     </label>
                     <div class="col-xs-6 ">
                       <input data-bind="value:name" type="text" class="form-control" placeholder="">
@@ -79,7 +79,8 @@
                   </div>
                   <div class="form-group">
                     <label class="col-xs-3 control-label text-right" style="padding-right: 0px;padding-left: 0px;margin-top: -6px;">
-                      <span style="font-weight: bold;font-size: 23px;letter-spacing: 2px; color:white;opacity: 1.0">目标</span>
+                      <!--#ff003b-->
+                      <span style="font-weight: bold;font-size: 23px;letter-spacing: 2px; color:white;opacity: 1.0;background-color: #ff9800;padding:6px 10px">目标</span>
                     </label>
                     <div class="col-xs-6 ">
                       <input data-bind="value: wish" type="text" class="form-control" placeholder="" />
@@ -159,7 +160,7 @@
         var data = {
           'queryJson': $.toJSON(requestPOJO)
         };
-        $.serverRequest($.getRootPath() + '/api/goal/add', data, "ADD_SUCCESS_LISTENER", "ADD_FAILED_LISTENER", "ADD_FAILED_LISTENER");
+        $.serverRequest($.getRootPath() + '/api/goal/addtest', data, "ADD_SUCCESS_LISTENER", "ADD_FAILED_LISTENER", "ADD_FAILED_LISTENER");
       }
     }
 
@@ -168,7 +169,7 @@
 
     function successAddListener() {
       if (arguments && arguments[1]) {
-        var resp = JSON.parse(arguments[1]);
+        var resp = arguments[1];
         console.log(resp.hasError)
         goalInputViewModel.hasResponse(true);
         if (resp.hasError) {

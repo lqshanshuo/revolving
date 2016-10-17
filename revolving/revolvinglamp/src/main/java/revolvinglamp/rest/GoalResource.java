@@ -6,7 +6,12 @@
 package revolvinglamp.rest;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.PersistenceContext;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -15,8 +20,10 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import org.codehaus.jackson.map.JsonMappingException;
 import revolvinglamp.GenericQueryClient;
+import revolvinglamp.entity.Genericentity;
 import revolvinglamp.model.GoalPOJO;
 import v2.service.generic.library.model.QueryResultPOJO;
+import v2.service.generic.library.model.ResponsePOJO;
 import v2.service.generic.library.model.http.HttpResponsePOJO;
 import v2.service.generic.library.utils.JsonUtil;
 
@@ -28,45 +35,92 @@ import v2.service.generic.library.utils.JsonUtil;
 @Path("goal")
 public class GoalResource {
 
-    @Path("add")
+    @PersistenceContext(unitName = "revolvinglamp_revolvinglamp_war_1.0-SNAPSHOTPU")
+    private EntityManager em;
+
+    @Path("addtest")
     @POST
     @Produces("application/json")
-    public String insertAndUpdate(@FormParam("queryJson") String queryJson) throws JsonMappingException, IOException, Exception {
-        System.out.println(queryJson);
-        GoalPOJO goal = JsonUtil.toPojo(queryJson, GoalPOJO.class);
+    public String insertAndUpdateTest(@FormParam("queryJson") String queryJson) throws JsonMappingException, IOException {
+        Genericentity goal = JsonUtil.toPojo(queryJson, Genericentity.class);
 
-        HttpResponsePOJO pojo = GenericQueryClient.getGoal(goal);
+        try {
+            Genericentity entity = (Genericentity) em.createQuery("select c from Genericentity c where c.stringalpha=:stringalpha AND c.name=:name")
+                    .setParameter("stringalpha", goal.getStringalpha())
+                    .setParameter("name", goal.getName())
+                    .getSingleResult();
 
-        QueryResultPOJO queryResult = JsonUtil.toPojo(pojo.getBody(), QueryResultPOJO.class);
+            //update
+            java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "update entity: \n" + queryJson);
 
-        if (queryResult == null || queryResult.getResult() == null || queryResult.getResult().isEmpty()) {
-            //not in database
-            pojo = GenericQueryClient.insertGoal(goal);
-        } else {
-            //already in database, just update
-            GoalPOJO po = JsonUtil.toPojo(JsonUtil.toJsonWithoutEmpth(queryResult.getResult().get(0)), GoalPOJO.class);
-            goal.setId(po.getId());
-            pojo = GenericQueryClient.updateGoal(goal);
+            entity.setNumberalpha(goal.getNumberalpha());
+            entity.setNumberbeta(goal.getNumberbeta());
+            em.merge(entity);
+        } catch (NoResultException e) {
+            java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "insert entity: \n" + queryJson);
+
+            em.persist(goal);
         }
 
-        return JsonUtil.toJsonWithoutEmpth(pojo.getBody());
+        ResponsePOJO resp = new ResponsePOJO();
+        resp.setHasError(Boolean.FALSE);
+        resp.setStatusCode(200);
+        return JsonUtil.toJsonWithoutEmpth(resp);
     }
 
     @POST
     @Produces("application/json")
     @Path("getallgoals")
-    public String getGoals() throws JsonMappingException, IOException, Exception {
-        HttpResponsePOJO pojo = GenericQueryClient.getGoals();
+    public String getGoals() throws IOException {
+        List list = em.createQuery("select c from Genericentity c")
+                .getResultList();
 
-        return pojo.getBody();
+        ResponsePOJO resp = new ResponsePOJO();
+        resp.setResult(list);
+        resp.setHasError(Boolean.FALSE);
+        resp.setStatusCode(200);
+        return JsonUtil.toJsonWithoutEmpth(resp);
     }
-    
-    @POST
-    @Produces("application/json")
-    @Path("goals/{department}")
-    public String getGoalsByDepartment(@PathParam("department") String department) throws JsonMappingException, IOException, Exception {
-        HttpResponsePOJO pojo = GenericQueryClient.getGoalsByDepartment(department);
 
-        return pojo.getBody();
-    }    
+//    @Path("add")
+//    @POST
+//    @Produces("application/json")
+//    public String insertAndUpdate(@FormParam("queryJson") String queryJson) throws JsonMappingException, IOException, Exception {
+//        System.out.println(queryJson);
+//        GoalPOJO goal = JsonUtil.toPojo(queryJson, GoalPOJO.class);
+//
+//        HttpResponsePOJO pojo = GenericQueryClient.getGoal(goal);
+//
+//        QueryResultPOJO queryResult = JsonUtil.toPojo(pojo.getBody(), QueryResultPOJO.class);
+//
+//        if (queryResult == null || queryResult.getResult() == null || queryResult.getResult().isEmpty()) {
+//            //not in database
+//            pojo = GenericQueryClient.insertGoal(goal);
+//        } else {
+//            //already in database, just update
+//            GoalPOJO po = JsonUtil.toPojo(JsonUtil.toJsonWithoutEmpth(queryResult.getResult().get(0)), GoalPOJO.class);
+//            goal.setId(po.getId());
+//            pojo = GenericQueryClient.updateGoal(goal);
+//        }
+//
+//        return JsonUtil.toJsonWithoutEmpth(pojo.getBody());
+//    }
+//
+//    @POST
+//    @Produces("application/json")
+//    @Path("getallgoals0")
+//    public String getGoals0() throws JsonMappingException, IOException, Exception {
+//        HttpResponsePOJO pojo = GenericQueryClient.getGoals();
+//
+//        return pojo.getBody();
+//    }
+//
+//    @POST
+//    @Produces("application/json")
+//    @Path("goals/{department}")
+//    public String getGoalsByDepartment(@PathParam("department") String department) throws JsonMappingException, IOException, Exception {
+//        HttpResponsePOJO pojo = GenericQueryClient.getGoalsByDepartment(department);
+//
+//        return pojo.getBody();
+//    }
 }
