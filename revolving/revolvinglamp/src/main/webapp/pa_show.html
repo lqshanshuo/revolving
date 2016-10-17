@@ -42,15 +42,15 @@
                 <div data-bind="if:$data">
                   <form class="form-horizontal">
                     <div class="form-group" style="margin-bottom: 0;">
-                      <div class="col-sm-6" style="padding-left: 0px;">
-                        <p data-bind="text: stringalpha" class="form-control-static" style="font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                      <div class="col-sm-4" style="padding-left: 0px;">
+                        <p data-bind="text: stringalpha,style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
-                      <div class="col-sm-3" style="padding-left: 0px;">
-                        <p data-bind="text: name" class="form-control-static" style="font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                      <div class="col-sm-4" style="padding-left: 0px;">
+                        <p data-bind="text: name,style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
-                      <div class="col-sm-3" style="padding-left: 0px;">
+                      <div class="col-sm-4" style="padding-left: 0px;">
                         <p data-bind="text: function(){return numberalpha()+'万'}(),
-                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="text-align: center;padding-left:0px;padding-right:0px;"></p>
+                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="font-weight: bold;text-align: center;padding-left:0px;padding-right:0px;"></p>
                       </div>
                     </div>
                   </form>
@@ -64,9 +64,9 @@
             <div data-bind="visible: greater100_list().length !== 0">
               <div data-bind="foreach: greater100_list">
                 <div class="row">
-                  <div class="col-sm-5 col-sm-offset-1" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
-                  <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:white;padding-left:0px;padding-right:0px;"></div>
-                  <div class="col-sm-3" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-4" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:#f6ff04;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-4" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:#f6ff04;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-4" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;padding-left:0px;padding-right:10px;"></div>
                 </div>
               </div>
             </div>
