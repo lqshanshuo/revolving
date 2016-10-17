@@ -33,7 +33,7 @@
           </video>
         </div>
         <div id="rightDIV" class="col-sm-6" style="background-image: url(assets/self-owned/img/zgpa/zmd1.png);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%;">
-          <div class="col-sm-6 text-center" style="padding-top:280px;border:0px solid">
+          <div class="col-sm-7 text-center" style="padding-top:280px;border:0px solid;padding-left:0px;padding-right:0px">
             <!-- behavior=scroll, slide, alternate -->
             <!-- direction=left,right,up,down -->
             <!-- scrollamount=20 -->
@@ -43,14 +43,14 @@
                   <form class="form-horizontal">
                     <div class="form-group" style="margin-bottom: 0;">
                       <div class="col-sm-4" style="padding-left: 0px;">
-                        <p data-bind="text: stringalpha,style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                        <p data-bind="text: stringalpha,style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 20px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
                       <div class="col-sm-4" style="padding-left: 0px;">
-                        <p data-bind="text: name,style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                        <p data-bind="text: name,style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 20px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
                       <div class="col-sm-4" style="padding-left: 0px;">
                         <p data-bind="text: function(){return numberalpha()+'万'}(),
-                            style: { color: numberalpha()>100 ?'#f6ff04':'white', fontSize:numberalpha()>=100 ? '20px':'16px',marginTop:numberalpha()>100 ? '-6px':'0px'}" class="form-control-static" style="font-weight: bold;text-align: center;padding-left:0px;padding-right:0px;"></p>
+                            style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 20px;text-align: center;padding-left:0px;padding-right:0px;"></p>
                       </div>
                     </div>
                   </form>
@@ -59,7 +59,7 @@
             </marquee>
             <br>
           </div>
-          <div class="col-sm-6 text-right pull-right" style="padding-top:280px;border:0px solid">
+          <div class="col-sm-5 text-right pull-right" style="padding-top:280px;border:0px solid">
             <!-- <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div> -->
             <div data-bind="visible: greater100_list().length !== 0">
               <div data-bind="foreach: greater100_list">
@@ -83,17 +83,23 @@
 
   <script language="javascript" type="text/javascript">
     var last_fetch_time = Date.now();
+    var current_height=0;
+    var current_width=0;
     $(document).ready(function() {
       // adjust page
       setInterval(function() {
         var width_video = document.body.clientWidth / 2;
-        $('#videoDIV').css('width', width_video);
-        $('#rightDIV').css('height', $('#videoDIV').css('height'));
-      }, 1000)
+        if(current_width!=width_video){
+          console.log("adjust pix");
+          current_width =width_video;
+          $('#videoDIV').css('width', current_width);
+          $('#rightDIV').css('height', $('#videoDIV').css('height'));
+        }
+      }, 500)
 
       setInterval(function() {
         getWishes();
-      }, 1000)
+      }, 3000)
 
       //此定时器每隔一秒将 revolved_list 中的数据 push 到 revoling_list 中
       var fetch_index = 0;
@@ -192,11 +198,11 @@
           for (var i = 0; i < results.length; i++) {
             var need_add = true;
             var server = results[i];
-            
+
             if (server.numberbeta > last_fetch_time) {
               last_fetch_time = server.numberbeta;
             }
-            
+
 
 //            for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
 //              var revolve = goalListViewModel.revolved_list()[j];
