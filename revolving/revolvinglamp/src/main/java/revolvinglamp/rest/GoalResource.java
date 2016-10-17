@@ -66,13 +66,14 @@ public class GoalResource {
         resp.setHasError(Boolean.FALSE);
         resp.setStatusCode(200);
         return JsonUtil.toJsonWithoutEmpth(resp);
-    }
-
+    }    
+    
     @POST
     @Produces("application/json")
     @Path("getallgoals")
-    public String getGoals() throws IOException {
-        List list = em.createQuery("select c from Genericentity c")
+    public String getGoals(@FormParam("last_fetch_time") Long lastFetchTime) throws IOException {
+        List list = em.createQuery("select c from Genericentity c where c.numberbeta > :numberbeta")
+                .setParameter("numberbeta", lastFetchTime)
                 .getResultList();
 
         ResponsePOJO resp = new ResponsePOJO();

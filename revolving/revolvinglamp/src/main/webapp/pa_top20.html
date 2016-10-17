@@ -86,7 +86,9 @@
 
       $.ajax({
         url: $.getRootPath() + '/api/goal/getallgoals',
+                contentType: "application/x-www-form-urlencoded;charset=UTF-8",
         type: 'POST',
+        data: "last_fetch_time=" + 0,
         success: function(json) {
           var results =null;
           if(!jQuery.isPlainObject(json)){
