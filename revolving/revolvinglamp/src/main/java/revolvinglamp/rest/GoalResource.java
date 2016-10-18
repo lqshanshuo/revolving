@@ -86,10 +86,11 @@ public class GoalResource {
             em.persist(goal);
         } else {
             //update
-            int length = list.size();
-            Genericentity entity = (Genericentity) list.get(length - 1);
             java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "update entity: \n" + queryJson);
 
+            int length = list.size();
+            Genericentity entity = (Genericentity) list.get(length - 1);
+            
             entity.setNumberalpha(goal.getNumberalpha());
             entity.setNumberbeta(goal.getNumberbeta());
             em.merge(entity);
