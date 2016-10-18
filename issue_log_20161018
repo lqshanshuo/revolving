@@ -1,0 +1,1784 @@
+Raw Log Viewer
+Close
+View a server log file using basic options.
+
+Instance:
+
+[2016-10-17T23:25:42.076+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942076] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly328","numberalpha":888}]]
+
+[2016-10-17T23:25:42.086+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942086] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly338","numberalpha":888}]]
+
+[2016-10-17T23:25:42.101+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942101] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly154","numberalpha":888}]]
+
+[2016-10-17T23:25:42.102+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942102] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly155","numberalpha":888}]]
+
+[2016-10-17T23:25:42.118+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942118] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly335","numberalpha":888}]]
+
+[2016-10-17T23:25:42.128+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942128] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly150","numberalpha":888}]]
+
+[2016-10-17T23:25:42.140+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942140] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly359","numberalpha":888}]]
+
+[2016-10-17T23:25:42.150+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942150] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly362","numberalpha":888}]]
+
+[2016-10-17T23:25:42.150+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942150] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly360","numberalpha":888}]]
+
+[2016-10-17T23:25:42.160+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942160] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly361","numberalpha":888}]]
+
+[2016-10-17T23:25:42.167+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942167] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly358","numberalpha":888}]]
+
+[2016-10-17T23:25:42.167+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942167] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly137","numberalpha":888}]]
+
+[2016-10-17T23:25:42.180+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942180] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly130","numberalpha":888}]]
+
+[2016-10-17T23:25:42.190+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942190] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly385","numberalpha":888}]]
+
+[2016-10-17T23:25:42.200+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942200] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly178","numberalpha":888}]]
+
+[2016-10-17T23:25:42.201+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942201] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly386","numberalpha":888}]]
+
+[2016-10-17T23:25:42.201+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942201] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly161","numberalpha":888}]]
+
+[2016-10-17T23:25:42.212+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942212] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly85","numberalpha":888}]]
+
+[2016-10-17T23:25:42.225+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942225] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly394","numberalpha":888}]]
+
+[2016-10-17T23:25:42.235+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942235] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly182","numberalpha":888}]]
+
+[2016-10-17T23:25:42.244+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942244] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly110","numberalpha":888}]]
+
+[2016-10-17T23:25:42.257+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942257] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly100","numberalpha":888}]]
+
+[2016-10-17T23:25:42.257+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942257] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly104","numberalpha":888}]]
+
+[2016-10-17T23:25:42.266+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942266] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly176","numberalpha":888}]]
+
+[2016-10-17T23:25:42.278+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942278] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly415","numberalpha":888}]]
+
+[2016-10-17T23:25:42.290+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942290] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly98","numberalpha":888}]]
+
+[2016-10-17T23:25:42.301+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942301] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly96","numberalpha":888}]]
+
+[2016-10-17T23:25:42.320+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942320] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly95","numberalpha":888}]]
+
+[2016-10-17T23:25:42.344+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942344] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly224","numberalpha":888}]]
+
+[2016-10-17T23:25:42.412+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942412] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly480","numberalpha":888}]]
+
+[2016-10-17T23:25:42.422+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942422] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly492","numberalpha":888}]]
+
+[2016-10-17T23:25:42.442+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942442] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly323","numberalpha":888}]]
+
+[2016-10-17T23:25:42.442+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942442] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly134","numberalpha":888}]]
+
+[2016-10-17T23:25:42.452+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942452] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly316","numberalpha":888}]]
+
+[2016-10-17T23:25:42.462+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942462] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly332","numberalpha":888}]]
+
+[2016-10-17T23:25:42.472+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942472] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly322","numberalpha":888}]]
+
+[2016-10-17T23:25:42.482+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942482] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly331","numberalpha":888}]]
+
+[2016-10-17T23:25:42.495+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942495] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly336","numberalpha":888}]]
+
+[2016-10-17T23:25:42.506+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942506] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly321","numberalpha":888}]]
+
+[2016-10-17T23:25:42.516+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942516] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly347","numberalpha":888}]]
+
+[2016-10-17T23:25:42.526+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942526] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly277","numberalpha":888}]]
+
+[2016-10-17T23:25:42.527+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942527] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly304","numberalpha":888}]]
+
+[2016-10-17T23:25:42.536+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942536] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly303","numberalpha":888}]]
+
+[2016-10-17T23:25:42.546+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942546] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly320","numberalpha":888}]]
+
+[2016-10-17T23:25:42.568+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942568] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly312","numberalpha":888}]]
+
+[2016-10-17T23:25:42.587+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942587] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly333","numberalpha":888}]]
+
+[2016-10-17T23:25:42.587+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942587] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly301","numberalpha":888}]]
+
+[2016-10-17T23:25:42.628+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942628] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly297","numberalpha":888}]]
+
+[2016-10-17T23:25:42.680+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942680] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly384","numberalpha":888}]]
+
+[2016-10-17T23:25:42.690+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942690] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly94","numberalpha":888}]]
+
+[2016-10-17T23:25:42.700+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942700] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly97","numberalpha":888}]]
+
+[2016-10-17T23:25:42.709+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942709] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly102","numberalpha":888}]]
+
+[2016-10-17T23:25:42.729+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942729] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly117","numberalpha":888}]]
+
+[2016-10-17T23:25:42.740+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942740] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly121","numberalpha":888}]]
+
+[2016-10-17T23:25:42.740+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942740] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly120","numberalpha":888}]]
+
+[2016-10-17T23:25:42.757+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942757] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly135","numberalpha":888}]]
+
+[2016-10-17T23:25:42.763+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942763] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly133","numberalpha":888}]]
+
+[2016-10-17T23:25:42.772+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942772] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly145","numberalpha":888}]]
+
+[2016-10-17T23:25:42.795+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942795] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly171","numberalpha":888}]]
+
+[2016-10-17T23:25:42.806+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942806] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly175","numberalpha":888}]]
+
+[2016-10-17T23:25:42.824+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942824] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly187","numberalpha":888}]]
+
+[2016-10-17T23:25:42.824+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942824] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly188","numberalpha":888}]]
+
+[2016-10-17T23:25:42.836+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942836] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly482","numberalpha":888}]]
+
+[2016-10-17T23:25:42.837+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942837] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly203","numberalpha":888}]]
+
+[2016-10-17T23:25:42.847+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942847] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly498","numberalpha":888}]]
+
+[2016-10-17T23:25:42.847+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942847] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly210","numberalpha":888}]]
+
+[2016-10-17T23:25:42.856+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942856] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly232","numberalpha":888}]]
+
+[2016-10-17T23:25:42.856+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942856] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly233","numberalpha":888}]]
+
+[2016-10-17T23:25:42.868+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942868] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly229","numberalpha":888}]]
+
+[2016-10-17T23:25:42.869+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942869] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly234","numberalpha":888}]]
+
+[2016-10-17T23:25:42.870+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942870] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly235","numberalpha":888}]]
+
+[2016-10-17T23:25:42.880+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942880] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly236","numberalpha":888}]]
+
+[2016-10-17T23:25:42.887+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942887] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly250","numberalpha":888}]]
+
+[2016-10-17T23:25:42.900+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717942900] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly256","numberalpha":888}]]
+
+[2016-10-17T23:25:42.910+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942910] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly269","numberalpha":888}]]
+
+[2016-10-17T23:25:42.920+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942920] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly279","numberalpha":888}]]
+
+[2016-10-17T23:25:42.930+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942930] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly285","numberalpha":888}]]
+
+[2016-10-17T23:25:42.941+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942941] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly289","numberalpha":888}]]
+
+[2016-10-17T23:25:42.968+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942968] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly371","numberalpha":888}]]
+
+[2016-10-17T23:25:42.982+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717942982] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly404","numberalpha":888}]]
+
+[2016-10-17T23:25:42.982+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717942982] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly395","numberalpha":888}]]
+
+[2016-10-17T23:25:42.992+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717942992] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly396","numberalpha":888}]]
+
+[2016-10-17T23:25:42.992+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717942992] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly376","numberalpha":888}]]
+
+[2016-10-17T23:25:43.002+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717943002] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly392","numberalpha":888}]]
+
+[2016-10-17T23:25:43.002+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717943002] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly403","numberalpha":888}]]
+
+[2016-10-17T23:25:43.012+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943012] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly421","numberalpha":888}]]
+
+[2016-10-17T23:25:43.012+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943012] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly427","numberalpha":888}]]
+
+[2016-10-17T23:25:43.022+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943022] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly400","numberalpha":888}]]
+
+[2016-10-17T23:25:43.022+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943022] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly401","numberalpha":888}]]
+
+[2016-10-17T23:25:43.034+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943034] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly409","numberalpha":888}]]
+
+[2016-10-17T23:25:43.035+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943035] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly383","numberalpha":888}]]
+
+[2016-10-17T23:25:43.036+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717943036] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly410","numberalpha":888}]]
+
+[2016-10-17T23:25:43.044+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943044] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly425","numberalpha":888}]]
+
+[2016-10-17T23:25:43.044+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717943044] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly399","numberalpha":888}]]
+
+[2016-10-17T23:25:43.054+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943054] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly420","numberalpha":888}]]
+
+[2016-10-17T23:25:43.054+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943054] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly398","numberalpha":888}]]
+
+[2016-10-17T23:25:43.055+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943055] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly417","numberalpha":888}]]
+
+[2016-10-17T23:25:43.066+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943066] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly408","numberalpha":888}]]
+
+[2016-10-17T23:25:43.066+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943066] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly382","numberalpha":888}]]
+
+[2016-10-17T23:25:43.079+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943079] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly389","numberalpha":888}]]
+
+[2016-10-17T23:25:43.086+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943086] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly416","numberalpha":888}]]
+
+[2016-10-17T23:25:43.095+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943095] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly413","numberalpha":888}]]
+
+[2016-10-17T23:25:43.096+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943096] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly405","numberalpha":888}]]
+
+[2016-10-17T23:25:43.096+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717943096] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly414","numberalpha":888}]]
+
+[2016-10-17T23:25:43.108+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943108] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly342","numberalpha":888}]]
+
+[2016-10-17T23:25:43.109+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943109] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly411","numberalpha":888}]]
+
+[2016-10-17T23:25:43.130+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943130] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly349","numberalpha":888}]]
+
+[2016-10-17T23:25:43.131+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943131] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly363","numberalpha":888}]]
+
+[2016-10-17T23:25:43.160+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717943160] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly369","numberalpha":888}]]
+
+[2016-10-17T23:25:43.212+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943212] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly407","numberalpha":888}]]
+
+[2016-10-17T23:25:43.213+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717943213] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly412","numberalpha":888}]]
+
+[2016-10-17T23:25:43.224+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943224] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly418","numberalpha":888}]]
+
+[2016-10-17T23:25:43.225+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943225] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly406","numberalpha":888}]]
+
+[2016-10-17T23:25:43.232+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943232] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly419","numberalpha":888}]]
+
+[2016-10-17T23:25:43.232+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943232] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly423","numberalpha":888}]]
+
+[2016-10-17T23:25:43.255+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476717943255] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly434","numberalpha":888}]]
+
+[2016-10-17T23:25:43.255+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943255] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly440","numberalpha":888}]]
+
+[2016-10-17T23:25:43.264+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476717943264] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly450","numberalpha":888}]]
+
+[2016-10-17T23:25:43.264+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717943264] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly449","numberalpha":888}]]
+
+[2016-10-17T23:25:43.275+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476717943275] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly451","numberalpha":888}]]
+
+[2016-10-17T23:25:43.283+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476717943283] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly459","numberalpha":888}]]
+
+[2016-10-17T23:25:43.295+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476717943295] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"2","numberbeta":1476727675818,"name":"ly490","numberalpha":888}]]
+
+[2016-10-18T09:34:09.759+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476754449759] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????????","numberbeta":1476754450109,"name":"???","numberalpha":20}]]
+
+[2016-10-18T09:55:30.002+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476755730002] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: java.io.IOException: Connection closed
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:969)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:686)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:355)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:342)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:161)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2557)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2290)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1135)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:568)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Connection closed
+	at org.glassfish.grizzly.asyncqueue.TaskQueue.onClose(TaskQueue.java:317)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.onClose(AbstractNIOAsyncQueueWriter.java:475)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.closeConnection(TCPNIOTransport.java:400)
+	at org.glassfish.grizzly.nio.NIOConnection.doClose(NIOConnection.java:593)
+	at org.glassfish.grizzly.nio.NIOConnection$5.run(NIOConnection.java:559)
+	at org.glassfish.grizzly.nio.DefaultSelectorHandler.execute(DefaultSelectorHandler.java:234)
+	at org.glassfish.grizzly.nio.NIOConnection.terminate0(NIOConnection.java:553)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.terminate0(TCPNIOConnection.java:292)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:169)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.write0(TCPNIOAsyncQueueWriter.java:87)
+	at org.glassfish.grizzly.nio.AbstractNIOAsyncQueueWriter.processAsync(AbstractNIOAsyncQueueWriter.java:333)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:108)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:414)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:383)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:347)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:278)
+	... 3 more
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.glassfish.grizzly.nio.transport.TCPNIOUtils.flushByteBuffer(TCPNIOUtils.java:149)
+	at org.glassfish.grizzly.nio.transport.TCPNIOAsyncQueueWriter.writeCompositeRecord(TCPNIOAsyncQueueWriter.java:158)
+	... 16 more
+]]
+
+[2016-10-18T10:07:30.932+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756450932] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756443059,"name":"???","numberalpha":15}]]
+
+[2016-10-18T10:07:34.787+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756454787] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756447252,"name":"???","numberalpha":15}]]
+
+[2016-10-18T10:07:44.667+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756464667] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756457152,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:10:03.697+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756603697] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756596575,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:10:08.787+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756608787] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756601712,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:10:12.497+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756612497] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756605395,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:10:15.508+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756615508] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756608474,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:10:15.832+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756615832] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756608075,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:10:17.777+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756617777] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756610697,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:10:18.155+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756618155] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756610433,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:11:11.823+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756671823] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756665008,"name":"???","numberalpha":100000}]]
+
+[2016-10-18T10:11:22.237+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756682237] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756678280,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:11:26.709+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756686709] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756678754,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:11:33.647+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756693647] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756689758,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:11:35.108+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756695108] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756694915,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:11:37.069+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756697069] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756689077,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:11:51.552+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756711552] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756703232,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:11:55.045+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756715045] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756714712,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:11:56.097+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756716097] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756707768,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:27.297+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756747297] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756739500,"name":"??","numberalpha":30}]]
+
+[2016-10-18T10:12:34.145+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756754145] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: java.util.concurrent.TimeoutException
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:973)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:686)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:355)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:342)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:161)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2477)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2212)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1085)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:568)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.util.concurrent.TimeoutException
+	at org.glassfish.grizzly.impl.SafeFutureImpl$Sync.innerGet(SafeFutureImpl.java:357)
+	at org.glassfish.grizzly.impl.SafeFutureImpl.get(SafeFutureImpl.java:264)
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:962)
+	... 38 more
+]]
+
+[2016-10-18T10:12:41.262+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756761262] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756752439,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:12:41.802+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756761802] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756754859,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:42.253+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756762253] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756762760,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:42.338+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756762338] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756761800,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:12:42.495+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756762495] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756762353,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:12:42.552+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756762552] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756754018,"name":"??","numberalpha":20}]]
+
+[2016-10-18T10:12:42.759+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756762759] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756762495,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:42.922+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756762922] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756754351,"name":"???","numberalpha":30000}]]
+
+[2016-10-18T10:12:42.963+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756762963] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"???","numberbeta":1476756756190,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:43.952+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756763952] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756755945,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:44.316+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756764316] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756763846,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:12:44.708+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756764708] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"???????","numberbeta":1476756757488,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:12:44.992+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756764992] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756765033,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:45.907+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756765907] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756765047,"name":"???","numberalpha":5}]]
+
+[2016-10-18T10:12:45.997+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756765997] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756758762,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:12:46.267+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756766267] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756757778,"name":"??","numberalpha":20}]]
+
+[2016-10-18T10:12:46.767+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756766767] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756758953,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:47.490+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756767490] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756767296,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:12:48.033+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756768033] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: java.util.concurrent.TimeoutException
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:973)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:686)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:355)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:342)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:161)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2477)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2212)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1085)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:568)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.util.concurrent.TimeoutException
+	at org.glassfish.grizzly.impl.SafeFutureImpl$Sync.innerGet(SafeFutureImpl.java:357)
+	at org.glassfish.grizzly.impl.SafeFutureImpl.get(SafeFutureImpl.java:264)
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:962)
+	... 38 more
+]]
+
+[2016-10-18T10:12:48.555+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756768555] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756767723,"name":"???","numberalpha":5}]]
+
+[2016-10-18T10:12:50.595+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756770595] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756770460,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:12:51.279+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756771279] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"???","numberbeta":1476756763770,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:12:52.647+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756772647] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756765664,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:12:53.320+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756773320] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756772284,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:12:56.492+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756776492] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756775948,"name":"???","numberalpha":5}]]
+
+[2016-10-18T10:12:57.212+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756777212] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756768544,"name":"???","numberalpha":3}]]
+
+[2016-10-18T10:12:57.945+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756777945] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756770493,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:12:59.167+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756779167] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756770844,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:12:59.714+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756779714] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756772212,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:12:59.907+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756779907] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756779930,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:00.022+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756780022] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756771827,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:13:01.404+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756781404] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756782673,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:02.398+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756782398] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756774943,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:13:02.456+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756782456] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756775270,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:05.641+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756785641] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756786400,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:13:06.691+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756786691] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756786676,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:06.727+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756786727] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??????","numberbeta":1476756786329,"name":"???","numberalpha":5}]]
+
+[2016-10-18T10:13:06.888+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756786888] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756787231,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:07.122+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756787122] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756779540,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:07.631+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756787631] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756781245,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:07.887+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756787887] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????????","numberbeta":1476756787533,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:13:07.982+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756787982] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756787863,"name":"??","numberalpha":20}]]
+
+[2016-10-18T10:13:08.998+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756788998] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??????","numberbeta":1476756788371,"name":"??","numberalpha":5}]]
+
+[2016-10-18T10:13:09.062+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756789062] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??????","numberbeta":1476756788718,"name":"???","numberalpha":5}]]
+
+[2016-10-18T10:13:09.150+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756789150] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756780967,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:13:09.522+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756789522] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756789444,"name":"??","numberalpha":20}]]
+
+[2016-10-18T10:13:09.615+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756789615] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756776497,"name":"???","numberalpha":15}]]
+
+[2016-10-18T10:13:10.173+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756790173] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756784010,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:11.099+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756791099] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756783616,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:13:12.193+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756792193] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756786053,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:13.118+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756793118] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??????????","numberbeta":1476756792375,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:14.722+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756794722] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??????","numberbeta":1476756794358,"name":"???","numberalpha":5}]]
+
+[2016-10-18T10:13:15.463+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756795463] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756788543,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:16.850+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756796850] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756789534,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:16.957+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756796957] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756803990,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:17.072+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756797072] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756797088,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:18.274+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756798274] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756797955,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:20.417+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756800417] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756793546,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:20.676+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756800676] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756793119,"name":"???","numberalpha":15}]]
+
+[2016-10-18T10:13:21.842+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756801842] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??????????","numberbeta":1476756801138,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:23.317+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756803317] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756795844,"name":"???","numberalpha":15}]]
+
+[2016-10-18T10:13:23.792+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756803792] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??????","numberbeta":1476756803477,"name":"???","numberalpha":5}]]
+
+[2016-10-18T10:13:25.332+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756805332] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756798373,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:25.499+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756805499] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756805368,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:25.665+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756805665] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756805701,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:26.517+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756806517] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756799018,"name":"???","numberalpha":15}]]
+
+[2016-10-18T10:13:27.082+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756807082] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756799849,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:29.325+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756809325] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756801826,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:31.137+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756811137] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756811144,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:31.693+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756811693] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756804650,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:33.719+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756813719] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756813877,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:33.880+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756813880] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"???","numberbeta":1476756805346,"name":"??","numberalpha":100000}]]
+
+[2016-10-18T10:13:34.623+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756814623] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756813911,"name":"???","numberalpha":15}]]
+
+[2016-10-18T10:13:34.758+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756814758] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??????????","numberbeta":1476756814073,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:36.013+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756816013] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"?????","numberbeta":1476756808794,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:36.246+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756816246] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756809052,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:36.389+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756816389] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756808864,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:36.617+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756816617] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756808074,"name":"??","numberalpha":100000}]]
+
+[2016-10-18T10:13:38.301+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756818301] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756818329,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:38.629+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756818629] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756811040,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:38.637+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756818637] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"???","numberbeta":1476756817907,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:13:39.444+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756819444] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756819213,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:39.989+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756819989] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756812477,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:40.009+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756820009] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756819864,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:13:41.119+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756821119] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756813616,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:41.737+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756821737] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756821645,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:42.149+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756822149] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756814701,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:42.490+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756822490] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756822184,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:13:43.208+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756823208] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756822628,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:13:43.279+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756823279] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756815711,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:44.559+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756824559] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756817000,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:44.879+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756824879] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756817375,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:45.029+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756825029] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756817578,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:45.280+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756825280] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756817766,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:45.607+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756825607] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756818265,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:45.678+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756825678] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756818123,"name":"??","numberalpha":50}]]
+
+[2016-10-18T10:13:46.598+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756826598] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756826615,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:47.956+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756827956] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756828016,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:49.046+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756829046] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756821917,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:49.486+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756829486] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756822406,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:13:50.487+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756830487] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????????","numberbeta":1476756829989,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:13:52.379+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756832379] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756832225,"name":"???","numberalpha":14}]]
+
+[2016-10-18T10:13:55.501+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756835501] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756835188,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:13:59.148+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756839148] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756831131,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:00.229+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756840229] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756840082,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:14:02.972+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756842972] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756834337,"name":"???","numberalpha":200000}]]
+
+[2016-10-18T10:14:03.335+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756843335] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756843152,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:14:06.219+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756846219] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756846035,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:14:09.745+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756849745] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756841699,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:12.648+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756852648] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756844776,"name":"???","numberalpha":200000}]]
+
+[2016-10-18T10:14:14.020+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756854020] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756846093,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:14:14.161+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756854161] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756853913,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:14:18.779+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756858779] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"?????","numberbeta":1476756858542,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:14:20.278+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756860278] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"?????","numberbeta":1476756860177,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:14:21.387+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756861387] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"???","numberbeta":1476756861141,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:25.114+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756865114] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756864975,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:25.582+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756865582] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???","numberbeta":1476756865393,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:25.876+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756865876] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756871444,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:25.880+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756865880] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756870133,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:26.007+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756866007] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756865891,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:14:27.004+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756867004] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756866838,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:14:28.363+0800] [glassfish 4.1] [WARNING] [AS-EJB-00056] [javax.enterprise.ejb.container] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756868363] [levelValue: 900] [[
+  A system exception occurred during an invocation on EJB GoalResource, method: public java.lang.String revolvinglamp.rest.GoalResource.insertAndUpdateTest(java.lang.String) throws org.codehaus.jackson.map.JsonMappingException,java.io.IOException]]
+
+[2016-10-18T10:14:28.364+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.ejb.container] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756868364] [levelValue: 900] [[
+  
+javax.ejb.EJBException
+	at com.sun.ejb.containers.EJBContainerTransactionManager.processSystemException(EJBContainerTransactionManager.java:748)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.completeNewTx(EJBContainerTransactionManager.java:698)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:503)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4566)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2074)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2044)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy313.insertAndUpdateTest(Unknown Source)
+	at revolvinglamp.rest.__EJB31_Generated__GoalResource__Intf____Bean__.insertAndUpdateTest(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor709.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:387)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:331)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:103)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:297)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:254)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1028)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:381)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:344)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.persistence.NonUniqueResultException: More than one result was returned from Query.getSingleResult()
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNonUniqueResultException(QueryImpl.java:976)
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:525)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400)
+	at revolvinglamp.rest.GoalResource.insertAndUpdateTest(GoalResource.java:48)
+	at sun.reflect.GeneratedMethodAccessor708.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4786)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:46)
+	at org.jboss.weld.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.GeneratedMethodAccessor700.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.GeneratedMethodAccessor702.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4758)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4746)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	... 55 more
+]]
+
+[2016-10-18T10:14:28.365+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756868365] [levelValue: 900] [[
+  StandardWrapperValve[revolvinglamp.ApplicationConfig]: Servlet.service() for servlet revolvinglamp.ApplicationConfig threw exception
+javax.persistence.NonUniqueResultException: More than one result was returned from Query.getSingleResult()
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNonUniqueResultException(QueryImpl.java:976)
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:525)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400)
+	at revolvinglamp.rest.GoalResource.insertAndUpdateTest(GoalResource.java:48)
+	at sun.reflect.GeneratedMethodAccessor708.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4786)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:46)
+	at org.jboss.weld.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.GeneratedMethodAccessor700.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.GeneratedMethodAccessor702.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4758)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4746)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy313.insertAndUpdateTest(Unknown Source)
+	at revolvinglamp.rest.__EJB31_Generated__GoalResource__Intf____Bean__.insertAndUpdateTest(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor709.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:387)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:331)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:103)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:297)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:254)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1028)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:381)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:344)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+]]
+
+[2016-10-18T10:14:30.240+0800] [glassfish 4.1] [WARNING] [AS-EJB-00056] [javax.enterprise.ejb.container] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756870240] [levelValue: 900] [[
+  A system exception occurred during an invocation on EJB GoalResource, method: public java.lang.String revolvinglamp.rest.GoalResource.insertAndUpdateTest(java.lang.String) throws org.codehaus.jackson.map.JsonMappingException,java.io.IOException]]
+
+[2016-10-18T10:14:30.241+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.ejb.container] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756870241] [levelValue: 900] [[
+  
+javax.ejb.EJBException
+	at com.sun.ejb.containers.EJBContainerTransactionManager.processSystemException(EJBContainerTransactionManager.java:748)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.completeNewTx(EJBContainerTransactionManager.java:698)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:503)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4566)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2074)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2044)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy313.insertAndUpdateTest(Unknown Source)
+	at revolvinglamp.rest.__EJB31_Generated__GoalResource__Intf____Bean__.insertAndUpdateTest(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor709.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:387)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:331)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:103)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:297)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:254)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1028)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:381)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:344)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.persistence.NonUniqueResultException: More than one result was returned from Query.getSingleResult()
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNonUniqueResultException(QueryImpl.java:976)
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:525)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400)
+	at revolvinglamp.rest.GoalResource.insertAndUpdateTest(GoalResource.java:48)
+	at sun.reflect.GeneratedMethodAccessor708.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4786)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:46)
+	at org.jboss.weld.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.GeneratedMethodAccessor700.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.GeneratedMethodAccessor702.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4758)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4746)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	... 55 more
+]]
+
+[2016-10-18T10:14:30.241+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756870241] [levelValue: 900] [[
+  StandardWrapperValve[revolvinglamp.ApplicationConfig]: Servlet.service() for servlet revolvinglamp.ApplicationConfig threw exception
+javax.persistence.NonUniqueResultException: More than one result was returned from Query.getSingleResult()
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNonUniqueResultException(QueryImpl.java:976)
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:525)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400)
+	at revolvinglamp.rest.GoalResource.insertAndUpdateTest(GoalResource.java:48)
+	at sun.reflect.GeneratedMethodAccessor708.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4786)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:46)
+	at org.jboss.weld.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.GeneratedMethodAccessor700.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.GeneratedMethodAccessor702.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:822)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4758)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4746)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy313.insertAndUpdateTest(Unknown Source)
+	at revolvinglamp.rest.__EJB31_Generated__GoalResource__Intf____Bean__.insertAndUpdateTest(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor709.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:387)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:331)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:103)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:297)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:254)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1028)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:381)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:344)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+]]
+
+[2016-10-18T10:14:33.499+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756873499] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756865871,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:14:36.567+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756876567] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"?????","numberbeta":1476756876457,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:14:36.708+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756876708] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"?????","numberbeta":1476756876659,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:14:38.928+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756878928] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756871688,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:15:02.647+0800] [glassfish 4.1] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756902647] [levelValue: 900] [[
+  StandardWrapperValve[default]: Servlet.service() for servlet default threw exception
+java.io.IOException: java.util.concurrent.TimeoutException
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:973)
+	at org.glassfish.grizzly.http.io.OutputBuffer.write(OutputBuffer.java:686)
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:355)
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:342)
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:161)
+	at org.apache.catalina.servlets.DefaultServlet.copyRange(DefaultServlet.java:2477)
+	at org.apache.catalina.servlets.DefaultServlet.copy(DefaultServlet.java:2212)
+	at org.apache.catalina.servlets.DefaultServlet.serveResource(DefaultServlet.java:1085)
+	at org.apache.catalina.servlets.DefaultServlet.doGet(DefaultServlet.java:568)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1682)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:318)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:734)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:673)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:174)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:415)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:282)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:459)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:167)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:201)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:175)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:235)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:561)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:565)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:545)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.util.concurrent.TimeoutException
+	at org.glassfish.grizzly.impl.SafeFutureImpl$Sync.innerGet(SafeFutureImpl.java:357)
+	at org.glassfish.grizzly.impl.SafeFutureImpl.get(SafeFutureImpl.java:264)
+	at org.glassfish.grizzly.http.io.OutputBuffer.blockAfterWriteIfNeeded(OutputBuffer.java:962)
+	... 38 more
+]]
+
+[2016-10-18T10:15:03.820+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756903820] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756896243,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:15:15.791+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756915791] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756908394,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:15:18.161+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756918161] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"????","numberbeta":1476756919062,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:15:23.003+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=30 _ThreadName=http-listener-1(5)] [timeMillis: 1476756923003] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756915789,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:15:24.175+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756924175] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756925883,"name":"???","numberalpha":100000}]]
+
+[2016-10-18T10:15:24.896+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756924896] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756923885,"name":"???","numberalpha":30}]]
+
+[2016-10-18T10:15:31.762+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756931762] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756924507,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:15:34.867+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756934867] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756936599,"name":"???","numberalpha":100000}]]
+
+[2016-10-18T10:15:36.727+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756936727] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756938451,"name":"???","numberalpha":100000}]]
+
+[2016-10-18T10:15:41.785+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756941785] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756942399,"name":"???","numberalpha":50}]]
+
+[2016-10-18T10:15:47.652+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756947652] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756940361,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:15:49.637+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756949637] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756942420,"name":"???","numberalpha":20}]]
+
+[2016-10-18T10:15:55.258+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756955258] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756947710,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:16:00.548+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756960548] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756953019,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:16:02.143+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756962143] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476756955769,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:16:08.280+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756968280] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756960740,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:16:08.562+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=28 _ThreadName=http-listener-1(3)] [timeMillis: 1476756968562] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756962343,"name":"??","numberalpha":10}]]
+
+[2016-10-18T10:16:09.924+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=27 _ThreadName=http-listener-1(2)] [timeMillis: 1476756969924] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"??","numberbeta":1476756962367,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:16:27.990+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476756987990] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"???????","numberbeta":1476756987368,"name":"???","numberalpha":0}]]
+
+[2016-10-18T10:16:36.898+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476756996898] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"????","numberbeta":1476756997006,"name":"???","numberalpha":10}]]
+
+[2016-10-18T10:16:57.764+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=29 _ThreadName=http-listener-1(4)] [timeMillis: 1476757017764] [levelValue: 800] [[
+  update entity: 
+{"stringalpha":"???????","numberbeta":1476757017306,"name":"???","numberalpha":100}]]
+
+[2016-10-18T10:16:58.424+0800] [glassfish 4.1] [INFO] [] [revolvinglamp.rest.GoalResource] [tid: _ThreadID=26 _ThreadName=http-listener-1(1)] [timeMillis: 1476757018424] [levelValue: 800] [[
+  insert entity: 
+{"stringalpha":"??","numberbeta":1476757011232,"name":"??","numberalpha":30}]]
+
+[2016-10-18T10:20:42.728+0800] [glassfish 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=1101 _ThreadName=admin-listener(52)] [timeMillis: 1476757242728] [levelValue: 800] [[
+  Redirecting to /index.jsf]]
+
+[2016-10-18T10:20:42.816+0800] [glassfish 4.1] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=243 _ThreadName=admin-listener(41)] [timeMillis: 1476757242816] [levelValue: 800] [[
+  Admin Console: Initializing Session Attributes...]]
+
