@@ -38,36 +38,69 @@ public class GoalResource {
     @PersistenceContext(unitName = "revolvinglamp_revolvinglamp_war_1.0-SNAPSHOTPU")
     private EntityManager em;
 
+//    @Path("add")
+//    @POST
+//    @Produces("application/json")
+//    public String insertAndUpdateTest(@FormParam("queryJson") String queryJson) throws JsonMappingException, IOException {
+//        Genericentity goal = JsonUtil.toPojo(queryJson, Genericentity.class);
+//
+//        try {
+//            Genericentity entity = (Genericentity) em.createQuery("select c from Genericentity c where c.stringalpha=:stringalpha AND c.name=:name")
+//                    .setParameter("stringalpha", goal.getStringalpha())
+//                    .setParameter("name", goal.getName())
+//                    .getSingleResult();
+//
+//            //update
+//            java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "update entity: \n" + queryJson);
+//
+//            entity.setNumberalpha(goal.getNumberalpha());
+//            entity.setNumberbeta(goal.getNumberbeta());
+//            em.merge(entity);
+//        } catch (NoResultException e) {
+//            java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "insert entity: \n" + queryJson);
+//
+//            em.persist(goal);
+//        }
+//
+//        ResponsePOJO resp = new ResponsePOJO();
+//        resp.setHasError(Boolean.FALSE);
+//        resp.setStatusCode(200);
+//        return JsonUtil.toJsonWithoutEmpth(resp);
+//    }    
+    
+    
     @Path("addtest")
     @POST
     @Produces("application/json")
-    public String insertAndUpdateTest(@FormParam("queryJson") String queryJson) throws JsonMappingException, IOException {
+    public String insertAndUpdate(@FormParam("queryJson") String queryJson) throws JsonMappingException, IOException {
         Genericentity goal = JsonUtil.toPojo(queryJson, Genericentity.class);
 
-        try {
-            Genericentity entity = (Genericentity) em.createQuery("select c from Genericentity c where c.stringalpha=:stringalpha AND c.name=:name")
-                    .setParameter("stringalpha", goal.getStringalpha())
-                    .setParameter("name", goal.getName())
-                    .getSingleResult();
+        List list = em.createQuery("select c from Genericentity c where c.stringalpha=:stringalpha AND c.name=:name")
+                .setParameter("stringalpha", goal.getStringalpha())
+                .setParameter("name", goal.getName())
+                .getResultList();
 
+        if (list == null || list.isEmpty()) {
+            java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "insert entity: \n" + queryJson);
+
+            em.persist(goal);
+        } else {
             //update
+            int length = list.size();
+            Genericentity entity = (Genericentity) list.get(length - 1);
             java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "update entity: \n" + queryJson);
 
             entity.setNumberalpha(goal.getNumberalpha());
             entity.setNumberbeta(goal.getNumberbeta());
             em.merge(entity);
-        } catch (NoResultException e) {
-            java.util.logging.Logger.getLogger(GoalResource.class.getName()).log(java.util.logging.Level.INFO, "insert entity: \n" + queryJson);
-
-            em.persist(goal);
         }
 
         ResponsePOJO resp = new ResponsePOJO();
         resp.setHasError(Boolean.FALSE);
         resp.setStatusCode(200);
         return JsonUtil.toJsonWithoutEmpth(resp);
-    }    
-    
+    }
+
     @POST
     @Produces("application/json")
     @Path("getallgoals")
