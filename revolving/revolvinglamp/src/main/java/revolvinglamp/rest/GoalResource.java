@@ -6,25 +6,19 @@
 package revolvinglamp.rest;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.math.BigInteger;
+import java.util.Date;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.FormParam;
-import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import org.codehaus.jackson.map.JsonMappingException;
-import revolvinglamp.GenericQueryClient;
 import revolvinglamp.entity.Genericentity;
-import revolvinglamp.model.GoalPOJO;
-import v2.service.generic.library.model.QueryResultPOJO;
 import v2.service.generic.library.model.ResponsePOJO;
-import v2.service.generic.library.model.http.HttpResponsePOJO;
 import v2.service.generic.library.utils.JsonUtil;
 
 /**
@@ -67,14 +61,13 @@ public class GoalResource {
 //        resp.setStatusCode(200);
 //        return JsonUtil.toJsonWithoutEmpth(resp);
 //    }    
-    
-    
     @Path("addtest")
     @POST
     @Produces("application/json")
     public String insertAndUpdate(@FormParam("queryJson") String queryJson) throws JsonMappingException, IOException {
         Genericentity goal = JsonUtil.toPojo(queryJson, Genericentity.class);
-
+        goal.setNumberbeta(new BigInteger("" + (new Date().getTime())));
+        
         List list = em.createQuery("select c from Genericentity c where c.stringalpha=:stringalpha AND c.name=:name")
                 .setParameter("stringalpha", goal.getStringalpha())
                 .setParameter("name", goal.getName())
@@ -90,7 +83,7 @@ public class GoalResource {
 
             int length = list.size();
             Genericentity entity = (Genericentity) list.get(length - 1);
-            
+
             entity.setNumberalpha(goal.getNumberalpha());
             entity.setNumberbeta(goal.getNumberbeta());
             em.merge(entity);
