@@ -126,7 +126,7 @@
             //计算平均数
             var list = departmentAverageList.list();
             for (var j = 0; j < list.length; j++) {
-              var avg = (Number(list[j].sum()) / Number(list[j].num())).toFixed(2);
+              var avg = (Number(list[j].sum()) / Number(list[j].num())).toFixed();
               list[j].avg(avg);
             }
 
