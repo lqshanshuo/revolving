@@ -84,20 +84,8 @@
     var current_height=0;
     var current_width=0;
     $(document).ready(function() {
-      // adjust page
-      setInterval(function() {
-        var width_video = document.body.clientWidth / 2;
-        if(current_width!=width_video){
-          console.log("adjust pix");
-          current_width =width_video;
-          $('#videoDIV').css('width', current_width);
-          $('#rightDIV').css('height', $('#videoDIV').css('height'));
-        }
-      }, 500)
+      getWishes();
 
-      setInterval(function() {
-        getWishes();
-      }, 3000)
 
       //此定时器每隔一秒将 revolved_list 中的数据 push 到 revoling_list 中
       var fetch_index = 0;
@@ -176,7 +164,7 @@
     var getWishes = function() {
 
       $.ajax({
-        url: $.getRootPath() + '/api/goal/getallgoals',
+        url: $.getRootPath() + '/api/goal/getallgoals2',
         type: 'POST',
         contentType: "application/x-www-form-urlencoded;charset=UTF-8",
         data: "last_fetch_time=" + last_fetch_time,
@@ -196,16 +184,10 @@
             var need_add = true;
             var server = results[i];
 
-             if (server.numberbeta > last_fetch_time) {
-               last_fetch_time = server.numberbeta;
-             }
-
 
            for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
              var revolve = goalListViewModel.revolved_list()[j];
              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
-               //                  goalListViewModel.revolved_list().splice(j, 1);
-               //                  goalListViewModel.revolving_list().splice(j, 1);
                need_add = true;
              }
              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
@@ -222,9 +204,6 @@
            }
           }
 
-
-//          //set new last fetch time
-//          last_fetch_time = Date.now();
         },
         error: function(json) {
           console.log("error");

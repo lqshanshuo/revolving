@@ -109,7 +109,19 @@ public class GoalResource {
         resp.setStatusCode(200);
         return JsonUtil.toJsonWithoutEmpth(resp);
     }
+    @POST
+    @Produces("application/json")
+    @Path("getallgoals2")
+    public String getAllGoals(@FormParam("last_fetch_time") Long lastFetchTime) throws IOException {
+        List list = em.createQuery("select c from Genericentity c ")
+                .getResultList();
 
+        ResponsePOJO resp = new ResponsePOJO();
+        resp.setResult(list);
+        resp.setHasError(Boolean.FALSE);
+        resp.setStatusCode(200);
+        return JsonUtil.toJsonWithoutEmpth(resp);
+    }
 //    @Path("add")
 //    @POST
 //    @Produces("application/json")
