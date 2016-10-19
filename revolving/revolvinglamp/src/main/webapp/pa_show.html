@@ -37,20 +37,20 @@
             <!-- behavior=scroll, slide, alternate -->
             <!-- direction=left,right,up,down -->
             <!-- scrollamount=20 -->
-            <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=3>
+            <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=5 style="min-height:300px;height:600px">
               <div data-bind="foreach: revolving_list">
                 <div data-bind="if:$data">
                   <form class="form-horizontal">
                     <div class="form-group" style="margin-bottom: 0;">
                       <div class="col-sm-4" style="padding-left: 0px;">
-                        <p data-bind="text: stringalpha,style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 20px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                        <p data-bind="text: stringalpha,style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
                       <div class="col-sm-4" style="padding-left: 0px;">
-                        <p data-bind="text: name,style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 20px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                        <p data-bind="text: name,style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
                       <div class="col-sm-4" style="padding-left: 0px;">
                         <p data-bind="text: function(){return numberalpha()+'万'}(),
-                            style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 20px;text-align: center;padding-left:0px;padding-right:0px;"></p>
+                            style: { color: numberalpha()>100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;padding-left:0px;padding-right:0px;"></p>
                       </div>
                     </div>
                   </form>
@@ -204,28 +204,29 @@
             // }
 
 
-//            for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
-//              var revolve = goalListViewModel.revolved_list()[j];
-////              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
-////                //                  goalListViewModel.revolved_list().splice(j, 1);
-////                //                  goalListViewModel.revolving_list().splice(j, 1);
-////                need_add = true;
-////              }
-//              if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
-//                need_add = false;
-//              }
-//            }
+           for (var j = 0; j < goalListViewModel.revolved_list().length; j++) {
+             var revolve = goalListViewModel.revolved_list()[j];
+             if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha !== revolve.numberalpha()) {
+               //                  goalListViewModel.revolved_list().splice(j, 1);
+               //                  goalListViewModel.revolving_list().splice(j, 1);
+               need_add = true;
+             }
+             if (server.name === revolve.name() && server.stringalpha === revolve.stringalpha() && server.numberalpha === revolve.numberalpha()) {
+               need_add = false;
+             }
+           }
 
-//            if (need_add) {
-//              if (server.numberbeta > last_fetch_time) {
+           if (need_add) {
+            //  if (server.numberbeta > last_fetch_time) {
                 console.log("push to list")
                 var goalViewModel = new GoalViewModel(results[i].stringalpha, results[i].name, results[i].numberalpha);
                 goalListViewModel.revolved_list.push(goalViewModel);
-//              }
-//            }
+            //  }
+           }
           }
 
 
+          //set new last fetch time
           last_fetch_time = Date.now();
         },
         error: function(json) {
