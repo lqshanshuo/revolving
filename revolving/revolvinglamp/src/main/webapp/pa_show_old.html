@@ -23,20 +23,24 @@
 </head>
 
 <body>
-  <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/revolve_background.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;height:100%;">
-  <!-- <div class="flat-matrix" style="background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%"> -->
+  <div class="flat-matrix" style="background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%">
     <!--<div class="flat-matrix" >-->
     <div class="container-fluid">
       <div id="screenDIV" class="row">
-        <div id="rightDIV" class="col-sm-12" >
-          <div class="col-sm-6 text-center" style="padding-top:10px;border:0px solid;padding-left:0px;padding-right:0px;height:100%">
+        <div class="col-sm-6">
+          <video id="videoDIV" autoplay loop controls=false style="width:600px;height:100%">
+            <source src="assets/self-owned/img/zgpa/tree.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div id="rightDIV" class="col-sm-6" style="background-image: url(assets/self-owned/img/zgpa/zmd1.png);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%;">
+          <div class="col-sm-7 text-center" style="padding-top:180px;border:0px solid;padding-left:0px;padding-right:0px;height:600px">
             <!-- behavior=scroll, slide, alternate -->
             <!-- direction=left,right,up,down -->
             <!-- scrollamount=20 -->
             <marquee id="mymarquee" behavior="scroll" direction="up" scrollamount=5 style="min-height:300px;height:600px">
               <div data-bind="foreach: revolving_list">
                 <div data-bind="if:$data">
-                  <form class="form-horizontal" style="line-height: 1;">
+                  <form class="form-horizontal">
                     <div class="form-group" style="margin-bottom: 0;">
                       <div class="col-sm-4" style="padding-left: 0px;">
                         <p data-bind="text: stringalpha,style: { color: numberalpha()>=100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 16px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
@@ -55,11 +59,11 @@
             </marquee>
             <br>
           </div>
-          <div class="col-sm-6 text-center pull-right" style="margin-top:25%;border:0px solid;height:100%">
+          <div class="col-sm-5 text-right pull-right" style="padding-top:180px;border:0px solid;height:600px">
             <!-- <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div> -->
             <div data-bind="visible: greater100_list().length !== 0">
               <div data-bind="foreach: greater100_list">
-                <div class="row" style="line-height: 1;">
+                <div class="row">
                   <div class="col-sm-4" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px; color:#f6ff04;padding-left:0px;padding-right:0px;"></div>
                   <div class="col-sm-4" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:#f6ff04;padding-left:0px;padding-right:0px;"></div>
                   <div class="col-sm-4" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;padding-left:0px;padding-right:10px;"></div>
