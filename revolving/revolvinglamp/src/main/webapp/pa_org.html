@@ -24,18 +24,18 @@
 
 <body>
   <!-- <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/average_background.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:750px;height:750px;"> -->
-  <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/average_background.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;height:100%;">
+  <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/02.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;height:100%;">
     <!--<div class="flat-matrix" >-->
     <div class="app-container">
       <div class="row content-container">
-        <div class="container">
+        <div class="container" style="margin-left: 10px;  margin-right: 10px;width: 100%;margin-top:20%">
           <!-- <div style="width:100%;height:130px;">&nbsp;</div> -->
-          <div id="department_average_div" style="margin-top:22%">
+          <div id="department_average_div" >
             <div class="col-sm-offset-7 col-sm-5 text-left">
               <div data-bind="foreach: list">
                 <div class="row" style="line-height: 1;">
-                  <div class="col-sm-5 text-center" data-bind="text: $data.department" style="font-weight: bold;font-size: 20px;letter-spacing: 2px; color:#f6ff04;opacity: 1.0"></div>
-                  <div class="col-sm-7" data-bind="text: function(){return $data.avg()+'万'}()" style="color:#f6ff04;font-weight: bold;font-size: 20px;letter-spacing: 2px;opacity: 1.0"></div>
+                  <div class="col-sm-5 text-center" data-bind="text: $data.department" style="font-weight: bold;font-size: 20px;letter-spacing: 2px; color:#f6ff04;opacity: 1.0;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-7" data-bind="text: function(){return $data.avg()+'万'}()" style="color:#f6ff04;font-weight: bold;font-size: 20px;letter-spacing: 2px;opacity: 1.0;padding-left:0px;padding-right:0px;"></div>
                 </div>
               </div>
             </div>

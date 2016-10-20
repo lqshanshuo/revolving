@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/revolve_background.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;height:100%;">
+  <div class="flat-matrix" style="background-image: url(assets/self-owned/img/zgpa/01.jpg);background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;height:100%;">
   <!-- <div class="flat-matrix" style="background-repeat: no-repeat;background-size:100% 100%;margin-top:0px;min-height:100%"> -->
     <!--<div class="flat-matrix" >-->
     <div class="container-fluid">
@@ -38,15 +38,15 @@
                 <div data-bind="if:$data">
                   <form class="form-horizontal" style="line-height: 1;">
                     <div class="form-group" style="margin-bottom: 0;">
-                      <div class="col-sm-4" style="padding-left: 0px;">
-                        <p data-bind="text: stringalpha,style: { color: numberalpha()>=100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 26px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                      <div class="col-sm-4" style="padding-left: 10px;">
+                        <p data-bind="text: stringalpha,style: { color: numberalpha()>=50 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 22px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
                       <div class="col-sm-4" style="padding-left: 0px;">
-                        <p data-bind="text: name,style: { color: numberalpha()>=100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 26px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
+                        <p data-bind="text: name,style: { color: numberalpha()>=50 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 22px;text-align: center;color:white;padding-left:0px;padding-right:0px;"></p>
                       </div>
                       <div class="col-sm-4" style="padding-left: 0px;">
                         <p data-bind="text: function(){return numberalpha()+'万'}(),
-                            style: { color: numberalpha()>=100 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 26px;text-align: center;padding-left:0px;padding-right:0px;"></p>
+                            style: { color: numberalpha()>=50 ?'#f6ff04':'white'}" class="form-control-static" style="font-weight: bold;font-size: 22px;text-align: center;padding-left:0px;padding-right:0px;"></p>
                       </div>
                     </div>
                   </form>
@@ -55,15 +55,15 @@
             </marquee>
             <br>
           </div>
-          <div class="col-sm-6 text-center pull-right" style="margin-top:25%;border:0px solid;height:100%">
+          <div class="col-sm-6 text-RIGHT pull-right" style="margin-top:25%;border:0px solid;height:100%;padding-left:0px;padding-right:0px;">
             <!-- <div><i onclick="changeScrollStatus()" class="fa fa-stop pull-right"></i></div> -->
             <marquee id="mymarquee2" behavior="scroll" direction="up" scrollamount=5 style="min-height:300px;height:400px">
             <div data-bind="visible: greater100_list().length !== 0">
               <div data-bind="foreach: greater100_list">
                 <div class="row" style="line-height: 1;">
-                  <div class="col-sm-4" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px;font-size: 26px; color:#f6ff04;padding-left:0px;padding-right:0px;"></div>
-                  <div class="col-sm-4" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:#f6ff04;font-size: 26px;padding-left:0px;padding-right:0px;"></div>
-                  <div class="col-sm-4" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;font-size: 26px;padding-left:0px;padding-right:10px;"></div>
+                  <div class="col-sm-5" data-bind="text: $data.stringalpha" style="font-weight: bold;letter-spacing: 2px;font-size: 22px; color:#f6ff04;padding-left:20px;padding-right:0px;"></div>
+                  <div class="col-sm-3" data-bind="text: $data.name" style="font-weight: bold;letter-spacing: 2px; color:#f6ff04;font-size: 22px;padding-left:0px;padding-right:0px;"></div>
+                  <div class="col-sm-4" data-bind="text: function(){return $data.numberalpha()+'万'}()" style="font-weight: bold;letter-spacing: 2px;color:#f6ff04 ;font-size: 22px;padding-left:0px;padding-right:10px;"></div>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@
 
           goalListViewModel.revolving_list.push(revolve);
 
-          if (revolve.numberalpha() >= 100) {
+          if (revolve.numberalpha() >= 50) {
             goalListViewModel.greater100_list.push(revolve);
           }
           fetch_index++;
